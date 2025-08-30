@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vilhelms Hemsida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js">
+</script>
+<body>
+    <div class="intro_bar">
+        <h4 style="position:absolute; font-size: 9.2em;">Välkomen till Vilhelms hemsida!</h4>
+        <h4 style="color: var(--acent-color); padding: calc(15vh + 0.05em);">Välkomen till Vilhelms hemsida!</h4>
+    </div>
+    <div class="top_bar">
+        <button type="button" class="dark_mode_button" onclick="dark_mode()">
+            <img style="margin: 0px;" src="dark_mode_switch.png" width="50em" height="50em">
+        </button>
+        <h1>Vilhelms hemsida</h1>
+        <h3>T4</h3>
+    </div>
+
+    <div class="gradient_around_container_aboutme">
+        <div class= "container_aboutme"> <!--första containern-->
+            <h1><b>ABOUT ME</b></h1>
+            <p>Jag är en teknik elev på Östra Gymnasiet. Jag gillar matte, programmering och SO-ämnen. Denna hemsida är byggd som ett test för hur min kunskap de närmaste dagarna har förbättrats. När jag började kursen Webbutveckling 1 hade jag nästan ingen erfarenhet av HTML, CSS och JS. Jag hade kunskap men ingen erfarenhet. Jag har programmerat lite i python men det var som ett fritidsprojekt. Under pythonutveckling har jag använt AI så fort jag stötte in i ett problem men nu med HTML ska jag inte använda AI tills jag gör slutprojektet. Jag hoppas detta ger mig mer förmåga att kunna implementera vad jag vill utan generativ AI i framtiden.</p>
+            <img id="jag-bild" src="PXL_20250828_093704457.jpg"> 
+        </div>
+    </div>
+
+    <div class="container_outline_works"> 
+        <!--
+        containern med alla saker jag har gjort, 
+        detta är två divs lagrade på varandra där den undre bara är 
+        till för titeln så att den är centrerad
+        -->
+        <h1><b>THINGS I HAVE DONE</b></h1>
+        <div class="container_works">
+            <div class="card">
+                <h2 style="margin-top: 0.4em;">Python</h2>
+                <p>
+                    Jag började programmera i 7an lite innan chatgpt kom ut. Jag började med enkla skrifter på min skoldator med syfte att imponera på föräldrar och lärare. Senare ville jag göra fler grejer och större saker så jag började använda AI. Det var precis efter chatgpt blev stort. Sedan sommaren innan ansåg jag att jag hade förlitat mig för mycket på AI så jag försökte skala ner det. Det var efter det beslutet som jag verkligen kunde använda AI och inte bara låta den göra saker åt mig. 
+                    <br><br>
+                    Nu har jag utvecklat allt möjligt, speciellt många Discord botar dock, som en som jag gjorde som kan skriva kommandon på datorn skripten kördes på, ta skärmdumpar, ta bilder med webbkameran, säga saker med TTS genom högtalarna mm.
+                </p>
+            </div>
+            <div class="card">
+                <h2 style="margin-top: 0.4em;">Eget på youtube</h2>
+                <p>
+                    Jag har länge tyckt det är kul att skapa filmer och kreativt berätta historier. 
+                    Först började det med Imovie på min mammas ipad och senare när man fick mobil blev det Capcut. 
+                    Detta är en reklam för ett spel som jag gjorde i en tävling med kompisar där vi tävlade om vem som skulle kunna göra bäst reklam på ett spel på en dags tid.
+                </p>
+                <iframe style="margin-left: 10px;" width="auto" height="auto" src="https://www.youtube.com/embed/1p-33YpoJNA?si=m-wA_WF_Ps-6byJh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="card">
+                <h2 style="margin-top: 0.4em;">Dexter WAW</h2>
+                <p>
+                    Jag, Miguel, Tiago, Gabriel och Lucas gjorde under digitalt skapande som slutprojekt en film kring serien Dexter. 
+                    Filmen filmades mestadels utanför skolan och till stor del också efter skolan. 
+                    Nu när man tittar tillbaka på den är den lite oförståelig utan kontext men medan vi gjorde den hade vi väldigt kul och det är det som räknas.
+                </p>
+                <iframe style="margin-left: 10px;" width="auto" height="auto" src="https://www.youtube.com/embed/ZrxIycYPLMk?si=tU-JlaWbvPeUl00Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="card">
+                <h2 style="margin-top: 0.4em;">Östra Löken</h2>
+                <p> Östra Löken startades av mig cirka en månad innan sommar-avslutningen. 
+                    I de nu (28/8/2025) 6 st upplagorna har tidningen vuxit och etablerats mer. 
+                    Joar Stange började skriva med mig i andra upplagan och nu har vi blivit uppmärksammade av Teknikprogrammets instagram och Notes. 
+                    Satirtidningen har också fått 4 insändare av 4 separata personer. 
+                    Just nu siktar vi på att behålla arbetsprocessen görlig och hoppas också kunna rekrytera en 1a så att tidningen i teorin skulle kunna leva kvar även när jag och Joar har tagit examen.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer_gradient"></div>
+
+    <footer>
+        <div>
+            <a href="https://steamcommunity.com/id/trt1e/" target="_blank"> <!--steam--> 
+                <button class="button_1 button">
+                    <img class="socials_logo" src="Steam_icon_logo.png">
+                </button>
+            </a>
+
+            <a href="https://www.youtube.com/@trtIe" target="_blank"> <!--youtube-->
+                <button class="button_2 button">
+                    <img class="socials_logo" src="youtube-logo.png">
+                </button>
+            </a>
+
+            <a href="https://github.com/trt1e?tab=overview&from=2025-08-01&to=2025-08-28" target="_blank"> <!--github-->
+                <button class="button_3 button">
+                    <img class="socials_logo" src="github_logo.png">
+                </button>
+            </a>
+
+            <a style="margin: auto; font-size: 40px;" href="mailto:vilhelm.grill@gmail.com"><!--email-->
+                <button class="button_4 button">
+                    <img class="socials_logo" src="email-logo.png">
+                </button>
+            </a>
+        </div>
+        <p>
+            <br><br>INFO: <br><br>
+            DENNA KOD ÄR SKRIVEN UTAN NÅGON DIREKT KOPIERING AV AI GENERERAD KOD. <br>
+            MOTIVATIONEN URKOM INTE BARA FRÅN VILJAN ATT FÖRBÄTTRA UTAN OCKSÅ FRÅN EN VILJA ATT PROKRASTINERA MATTEN. <br>
+            DETTA ÄR MIN FÖRSTA HEMSIDA. <br>
+            KODEN ÄR INTE VACKER. <br>
+
+        </p>
+        <div>⠀</div> <!--Detta är en jävligt dum lösning där jag tar ett osynligt unicode tecken i en 
+        div för att fottern ska nå bottem av skärmen som vanligtvis inte skulle vissas. 
+        min teori är att det är mellanrummet under text i fonten som används som gör att det behövs, 
+        aja, nu funkar det-->
+    </footer>
+
+    <!-- element vi ska ha:
+    om mig
+    en bild
+    flytande element som är sociala media länkar
+    integrering med steam och yt och andra program som tillåter det
+    -->
+</body>
+</html>
