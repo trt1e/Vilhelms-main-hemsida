@@ -8,7 +8,7 @@
     --text-color: #17020d;
 
     /*Gradients*/
-    --top-bar-gradient: linear-gradient(180deg, var(--bg-color) 0%, var(--darker-bg-color) 50%, var(--bg-color) 100%);
+    --top-bar-gradient: linear-gradient(180deg, var(--bg-color) 0%, var(--darker-bg-color) 100%);
 }
 
 * {
@@ -61,7 +61,7 @@ footer {
 
 #top_bar {
     z-index: 1000;
-    position: relative;
+    position: sticky;
     top: 0;
     min-width: 100%;
     height: 3.5em;
@@ -102,6 +102,56 @@ footer {
 .start_text_på_index:hover {
     opacity: 80%;
     font-size: 14vw;
+}
+#start_page_bg_text {
+    position: absolute; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.page_content_cards {
+    width: 30em;
+    height: 20em;
+    background-color: var(--second-color);
+    border-radius: 5px;
+    margin-top: 10em;
+}
+#page_content_cards_webbsidor {
+
+}
+#page_content_cards_gjort {
+
+}
+#page_content_cards_östra_löken {
+
+}
+#page_content_cards_smj_prod {
+
+}
+#page_content_cards_kontaktinfor {
+
+}
+.page_content_top_bar_button {
+    top: 0;
+    position: sticky;
+    z-index: 1001;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+    margin-top: 0.5em;
+    height: 3.5em;
+    border: none;
+    color: var(--text-color);
+    background-image: var(--top-bar-gradient);
+    transition-duration: 0.2s;
+    white-space: nowrap;
+    overflow: visible;
+}
+.page_content_top_bar_elements {
+    font-size: 3em;
 }
 
 /*Östra Löken*/
@@ -174,10 +224,9 @@ footer {
 
 /*Socials tab*/
 #kontaktinfo_stor_container {
-    position: fixed;
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .socials_boxes {
@@ -186,13 +235,13 @@ footer {
     border-radius: 12px;
     display: flex;
     flex-direction: row;
-    width: 40em;
-    height: 25vh;
+    width: 37em;
+    height: 11em;
     text-decoration: none;
 }
 .socials_boxes:hover {
     background-color: var(--acent-color);
-    cursor:pointer;  
+    cursor: pointer;  
     transition: 0.1s;
 }
 .socials_logo {
@@ -202,7 +251,8 @@ footer {
     border: none;
     border-radius: 12px;
     padding: 0.3em;
-    padding-left: 13px;
+    padding-left: 5px;
+    padding-top: 5px;
     mix-blend-mode: multiply;
 }
 .socials_logo:hover {
@@ -215,19 +265,14 @@ footer {
 }
 #socials_steam {
     margin-top: 3em;
-    margin-left: -13px;
 }
 #socials_youtube {
     margin-top: 3em;
-    margin-left: 10vw;
-    margin-right: -13px;
 }
 #socials_github {
-    margin-top: 5em;
-    margin-left: -13px;
+    margin-top: 3em;
 }
 #socials_email {
-    margin-top: 5em;
-    margin-left: 10vw;
-    margin-right: -13px;
+    margin-top: 3em;
+    margin-bottom: 2em;
 }
