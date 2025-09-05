@@ -1,11 +1,11 @@
 Östra_Löken_utgåvor = [
-    "./östra_löken_pdf/Östra Löken upplaga 1.pdf",
-    "./östra_löken_pdf/Östra Löken upplaga 2.pdf",
-    "./östra_löken_pdf/Östra Löken upplaga 3.pdf",
-    "./östra_löken_pdf/Östra Löken upplaga 4.pdf",
-    "./östra_löken_pdf/Östra Löken upplaga 5.pdf",
-    "./östra_löken_pdf/Östra Löken upplaga 6.pdf",
-    "./östra_löken_pdf/Östra Löken upplaga 7.pdf"
+    "./östra_löken_pdf/Östra Löken upplaga 1.pdf#toolbar=0",
+    "./östra_löken_pdf/Östra Löken upplaga 2.pdf#toolbar=0",
+    "./östra_löken_pdf/Östra Löken upplaga 3.pdf#toolbar=0",
+    "./östra_löken_pdf/Östra Löken upplaga 4.pdf#toolbar=0",
+    "./östra_löken_pdf/Östra Löken upplaga 5.pdf#toolbar=0",
+    "./östra_löken_pdf/Östra Löken upplaga 6.pdf#toolbar=0",
+    "./östra_löken_pdf/Östra Löken upplaga 7.pdf#toolbar=0"
 ]; // sätter upp så vi kan pulla destinationerna på PDF:erna
 Östra_Löken_utgåvor_namn = [
     "Östra Löken upplaga 1",
@@ -19,10 +19,11 @@
 let mängdÖstraLöken;
 mängdÖstraLöken = Östra_Löken_utgåvor.length;
 let Östra_Löken_Ticker;
-Östra_Löken_Ticker = 0; 
+Östra_Löken_Ticker = (mängdÖstraLöken - 1); 
 
 /*alert("test")*/
 
+//gör så man kan bytta vilken ÖL man lässer
 function Östra_Löken_Right_Button_Down() {
     Östra_Löken_Ticker = Östra_Löken_Ticker + 1; // öka countern
 
