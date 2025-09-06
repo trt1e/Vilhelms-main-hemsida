@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>En första hemsida</title>
-    <link rel="stylesheet" href="En första webbsida_style.css">
+    <link rel="stylesheet" href="En_forsta_webbsida_style.css">
 </head>
 <body>
     <div style="width: 100vw; height: 40vh;">
