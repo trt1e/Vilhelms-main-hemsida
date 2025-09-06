@@ -308,6 +308,10 @@ footer {
     }
 
     .page_content_top_bar_button {
+        white-space: normal;
+    }
+
+    .page_content_top_bar_button {
         position: relative;
         z-index: 999;
     }
