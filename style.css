@@ -225,7 +225,7 @@ footer {
 
 #bottom_index_page_scrolling_text_container {
     width: 100%;
-    height: 10em;
+    height: 10vw;
     margin-bottom: 10em;
     overflow-y: hidden;
     white-space: nowrap;
@@ -275,6 +275,10 @@ footer {
 @media (max-width: 1410px) { 
     .page_content_cards {
         width: 90%;
+    }
+
+    .page_content_cards_visabil {
+        height: calc(25em - 10vw);
     }
 
     #page_content_cards_vad_är_detta {
@@ -482,6 +486,59 @@ footer {
     font-size: 5vw;
 }
 
+/*gjort*/
+#gjort_main_grid {
+    width: 90vw;
+    margin-left: 5vw;
+    height: fit-content;
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1em;
+}
+.gjort_main_cards {
+    border: var(--second-color) solid 3px;
+    border-radius: 5px;
+    height: 30em;
+    transition: 0.5s;
+}
+.gjort_main_cards:hover {
+    background-color: honeydew;
+    transform: translate(0%, -5%);
+    box-shadow: 5px 5px 10px 2px rgb(0 0 0 / 0.3);
+}
+.gjort_main_cards_title {
+    text-align: center;
+}
+.gjort_main_text {
+    margin: 0.8em;
+}
+#gjort_python_card_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+@media (max-width: 1200px) and (min-width: 1000px) {
+    .gjort_main_cards {
+        height: 35em;
+    }
+}
+@media (max-width: 1000px) {
+    #gjort_main_grid {
+        margin-top: 3em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2.5fr 1fr;
+    }
+    .gjort_main_cards {
+        height: fit-content;
+    }
+    #gjort_python_card_div {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
 /*SMJ.prod*/
 #smj_prod_bg_contaioner {
     background:
@@ -583,9 +640,14 @@ footer {
     text-align: right;
     font-size: 1.2em;
 }
-@media (max-width: 700px) {
+@media (max-width: 700px) and (min-width: 500px) {
     .Östra_Löken_Beskrivning {
     font-size: 1em;
+    }
+}
+@media (max-width: 500px) {
+    .Östra_Löken_Beskrivning {
+    font-size: 0.7em;
     }
 }
 .Östra_Löken_Titel {
@@ -640,17 +702,12 @@ footer {
     height: 11em; /*11em*/
     text-decoration: none;
     transition: all 0.4s;
-}
-@media (max-width: 37em) {
-    .socials_boxes {
-        width: 90%;
-        height: auto;
-        margin-left: 5%;
-    }
+    overflow: hidden;
 }
 .socials_boxes:hover {
     background-color: var(--second-color);
     cursor: pointer; 
+    box-shadow: 5px 5px 10px 2px rgb(0 0 0 / 0.3);
 }
 .socials_logo {
     background-color: white;
@@ -669,7 +726,7 @@ footer {
 }
 .socials_text {
     padding: 0.1em;
-    font-size: 4em;
+    font-size: 3.7em;
 }
 #socials_steam {
     margin-top: 3em;
@@ -683,4 +740,18 @@ footer {
 #socials_email {
     margin-top: 3em;
     margin-bottom: 2em;
+}
+@media (max-width: 37em) {
+    .socials_boxes {
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+    }
+    .socials_text {
+        font-size: 3em;
+    }
+    .socials_logo {
+        height: 8em;
+        width: auto;
+    }
 }
