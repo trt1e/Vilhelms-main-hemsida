@@ -1,92 +1,213 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>En första hemsida</title>
+    <title>Vilhelms Hemsida</title>
+    <link rel="icon" type="image/x-icon" href="vgsites.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 <script src="script.js"></script>
 <body>
-    <div style="width: 100vw; height: 40vh;">
-        <div style="position: sticky; top: 0; height: 20vh; width: 100vw; background-color: var(--bg-color);"></div>
-        <h1>Här är min <b class="fancy">H1 tag</b></h1>
-    </div>
+    <div id="page-container">
+        <div id="content-wrap">
+            <div id="top_bar">
+                <a href="index">
+                    <button class="top_bar_button_current top_bar_button">
+                        <p class="top_bar_elements">Hem</p>
+                    </button>
+                </a>
+                <a href="webbsidor" class="index_top_bar_remove_if_not_phone">
+                    <button class="top_bar_button">
+                        <p class="top_bar_elements">Webbsidor</p>
+                    </button>
+                </a>
+                <a href="gjort" class="index_top_bar_remove_if_not_phone">
+                    <button class="top_bar_button">
+                        <p class="top_bar_elements">Gjort</p>
+                    </button>
+                </a>
+                <a href="östra_löken" class="index_top_bar_remove_if_not_phone">
+                    <button class="top_bar_button">
+                        <p class="top_bar_elements">Östra Löken</p>
+                    </button>
+                </a>
+                <a href="smj_prod" class="index_top_bar_remove_if_not_phone">
+                    <button class="top_bar_button">
+                        <p class="top_bar_elements">SMJ.prod</p>
+                    </button>
+                </a>
+                <a href="kontaktinfo" class="index_top_bar_remove_if_not_phone">
+                    <button class="top_bar_button">
+                        <p class="top_bar_elements">Kontaktinfo</p>
+                    </button>
+                </a> 
+            </div>
 
-    <div class="blocking_div"></div>
-    
-    <div><p>Här är min <b class="fancy">p tag</b></p></div>
+            <div class="page_content_cards" id="page_content_cards_vad_är_detta">
+                <a href="https://github.com/trt1e/Vilhelms-main-hemsida" target="_blank">
+                    <button class="page_content_top_bar_button">
+                        <p class="page_content_top_bar_elements" id="index_text_hide_when_phone">Vad är detta för hemsida?</p>
+                        <p class="page_content_top_bar_elements" id="index_text_show_when_phone">Vad är detta <br> för hemsida?</p>
+                    </button>
+                </a>
+                <div class="page_content_cards_visabil">
+                    <div class="page_content_top_spec_card"><p class="page_content_top_spec_text">page_content.exe</p></div>
+                    <div class="page_content_text_in_card_container"><p class="page_content_text_in_card">
+                    Denna site är menat att vara en hub med allting praktiskt och informativt kring Vilhelm. 
+                    Läs beskrivningar till alla delar av sajten och tryck på körknappen för att besöka dem.    
+                    </p></div>
+                </div>
+            </div>
+            <div>
+                <div class="page_content_cards" id="page_content_cards_webbsidor">
+                    <a href="webbsidor.html">
+                        <button class="page_content_top_bar_button">
+                            <p class="page_content_top_bar_elements">Webbsidor</p>
+                        </button>
+                    </a>
+                    <div class="page_content_cards_visabil">
+                        <div class="page_content_top_spec_card"><p class="page_content_top_spec_text">page_content.exe</p></div>
+                        <div class="page_content_text_in_card_container"><p class="page_content_text_in_card">
+                        Här är alla nuvarande och framtida hemsidor också gjorda av Vilhelm eller kompani.
+                        </p></div>
+                        <a href="webbsidor.html" class="page_content_button_a_link">
+                            <button class="page_content_run_button">
+                                <h4 class="page_content_run_text">RUN OPEN_WEBBSIDOR.EXE</h4>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="page_content_cards" id="page_content_cards_gjort">
+                    <a href="gjort.html">
+                        <button class="page_content_top_bar_button">
+                            <p class="page_content_top_bar_elements">Gjort</p>
+                        </button>
+                    </a>
+                    <div class="page_content_cards_visabil">
+                        <div class="page_content_top_spec_card"><p class="page_content_top_spec_text">page_content.exe</p></div>
+                        <div class="page_content_text_in_card_container"><p class="page_content_text_in_card">
+                            Det här är lite som en “about me” men mer av vad jag har gjort. 
+                            Det kan vara webbsidor, pythonprojekt eller annat. 
+                            Det är framför allt inte demonstrativt utan mer att jag bara berättar om dessa skapelser.
+                        </p></div>
+                        <a href="gjort.html" class="page_content_button_a_link">
+                            <button class="page_content_run_button">
+                                <h4 class="page_content_run_text">RUN OPEN_GJORT.EXE</h4>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="page_content_cards" id="page_content_cards_östra_löken">
+                    <a href="östra_löken.html">
+                        <button class="page_content_top_bar_button">
+                            <p class="page_content_top_bar_elements">Östra Löken</p>
+                        </button>
+                    </a>
+                    <div class="page_content_cards_visabil">
+                        <div class="page_content_top_spec_card"><p class="page_content_top_spec_text">page_content.exe</p></div>
+                        <div class="page_content_text_in_card_container"><p class="page_content_text_in_card">
+                            Jag som grundare av Östra Löken berättar här lite om våran historia. 
+                            Den har också en interaktiv part där man kan kolla igenom alla upplagor av Östra Löken. 
+                            Man kan också ladda ner eller printa dem om man skulle vilja.
+                        </p></div>
+                        <a href="östra_löken.html" class="page_content_button_a_link">
+                            <button class="page_content_run_button">
+                                <h4 class="page_content_run_text">RUN OPEN_OSTRALOKEN.EXE</h4>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="page_content_cards" id="page_content_cards_smj_prod">
+                    <a href="smj_prod.html">
+                        <button class="page_content_top_bar_button">
+                            <p class="page_content_top_bar_elements">SMJ.prod</p>
+                        </button>
+                    </a>
+                    <div class="page_content_cards_visabil">
+                        <div class="page_content_top_spec_card"><p class="page_content_top_spec_text">page_content.exe</p></div>
+                        <div class="page_content_text_in_card_container"><p class="page_content_text_in_card">
+                            Snurra min jord productions är ett annat skolrelaterat projekt jag har varit med och skapat. 
+                            Här berättar jag om filmstudion och dess filmer.
+                        </p></div>
+                        <a href="smj_prod.html" class="page_content_button_a_link">
+                            <button class="page_content_run_button">
+                                <h4 class="page_content_run_text">RUN OPEN_SMJPROD.EXE</h4>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="page_content_cards" id="page_content_cards_kontaktinfor">
+                    <a href="kontaktinfo.html">
+                        <button class="page_content_top_bar_button">
+                            <p class="page_content_top_bar_elements">Kontaktinfo</p>
+                        </button>
+                    </a>
+                    <div class="page_content_cards_visabil">
+                        <div class="page_content_top_spec_card"><p class="page_content_top_spec_text">page_content.exe</p></div>
+                        <div class="page_content_text_in_card_container"><p class="page_content_text_in_card">
+                            Här är bara en enkel sida för att få se min Steam, Youtube, Github och email.
+                        </p></div>
+                        <a href="kontaktinfo.html" class="page_content_button_a_link">
+                            <button class="page_content_run_button">
+                                <h4 class="page_content_run_text">RUN OPEN_KONTAKTINFOR.EXE</h4>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-    <div class="blocking_div"></div>
 
-    <div><li>Här är min <b class="fancy">ul tag</b></li></div>
+            <div id="bottom_index_page_div">
+                <div id="bottom_index_page_scrolling_text_container">
+                    <h3 class="bottom_index_page_scrolling_text_text">
+                        <br><br><br><br><br><br>
+                        DU ÄR PÅ <br>
+                        VILHELMS HEMSIDA
+                        <br><br><br><br><br><br> 
+                        NYA SAKER LÄGGS TILL <br> 
+                        HELA TIDEN TILL <br> 
+                        VILHELMS HEMSIDA 
+                    </h3>
+                </div>
 
-    <div class="blocking_div"></div>
-
-    <h3>Här är min <b class="fancy">bild</b></h3>
-    <img src="img 1.jpg" id="img">
-
-    <div class="blocking_div"></div>
-
-    <h3 style="margin-bottom: 5vh;">Du ville att jag skulle använda en länk, här får du:</h3>
-    <div style="width: 100vw; height: fit-content;">
-        <div style="width: 100vw; height: fit-content; background-color: var(--bg-color); position: sticky; top: 0; display: grid;"><a href="https://vgsites.se"><p>Av: <b class="fancy">Vilhelm Grill</b></p></a></div>
-
-        <div class="blocking_div"></div>
-
-        <div style="display: flex; gap: 0.9rem; justify-content: center;">
-            <h3 class="differnt_fonts">Här </h3>
-            <h3 class="differnt_fonts">är </h3>
-            <h3 class="differnt_fonts">en </h3>
-            <h3 class="differnt_fonts">H3 </h3>
-            <h3 class="differnt_fonts">tag </h3>
-            <h3 class="differnt_fonts">där </h3>
-            <h3 class="differnt_fonts">vi </h3>
-            <h3 class="differnt_fonts">bytte </h3>
-            <h3 class="differnt_fonts">font</h3>
+                <a href="https://vgsites.se" id="bottom_index_page_a">
+                    <p class="bottom_index_page_span_word" id="bottom_index_page_span_word_1">
+                        <span class="bottom_index_page_span_letter">d</span>
+                        <span class="bottom_index_page_span_letter">e</span>
+                        <span class="bottom_index_page_span_letter">t</span>
+                        <span class="bottom_index_page_span_letter">t</span>
+                        <span class="bottom_index_page_span_letter">a</span>
+                    </p>
+                    <p class="bottom_index_page_span_word" id="bottom_index_page_span_word_2">
+                        <span class="bottom_index_page_span_letter">ä</span>
+                        <span class="bottom_index_page_span_letter">r</span>
+                    </p>
+                    <p class="bottom_index_page_span_word" id="bottom_index_page_span_word_3">
+                        <span class="bottom_index_page_span_letter">v</span>
+                        <span class="bottom_index_page_span_letter">g</span>
+                        <span class="bottom_index_page_span_letter">s</span>
+                        <span class="bottom_index_page_span_letter">i</span>
+                        <span class="bottom_index_page_span_letter">t</span>
+                        <span class="bottom_index_page_span_letter">e</span>
+                        <span class="bottom_index_page_span_letter">s</span>
+                        <span class="bottom_index_page_span_letter">.</span>
+                        <span class="bottom_index_page_span_letter">s</span>
+                        <span class="bottom_index_page_span_letter">e</span>
+                    </p>
+                </a>
+            </div>
+            <div style="width: 100%; height: 5em; background-color: var(--bg-color);"></div> <!--just to take up space-->
         </div>
 
-        <div class="blocking_div"></div>
+    <footer>
+        <p>ALL RIGHTS RESERVED</p>
 
-        <h3>Här är min <b class="fancy">background color</b></h3>
-        <h4>(Den är också en <b class="fancy">div</b>)</h4>
-        <div id="color_swatch"></div>
+        <p>ALL USES OF AI ARE CLEARLY MENTIONED IN COMMENTS</p>
+        <p>THIS WEBSITE WAS CREATED BY VILHELM</p>
 
-        <div class="blocking_div"></div>
-
-        <h3>Här är en bild med <b class="fancy">float</b></h3>
-        <img src="img 2.jpg" id="float_img">
-
-        <div class="blocking_div"></div>
-        <div class="blocking_div"></div>
-
-        <h1>Och nu allting <b class="fancy">TILLSAMMANS</b></h1>
+        <p>REACH ME AT VILHELM.GRILL@GMAIL.COM</p>
+    </footer>
     </div>
-    <div class="blocking_div"></div>
-
-    <a href="https://vgsites.se">
-        <div id="final_page">
-            <H1>ALLTING?</H1>
-            <H2 style="font-family:serif">Ja, allting tillsammans</H2>
-            <p>Eller ja, jag lyckades inte få in float men typ!</p>
-            <ul>
-                <li><p>Det känns ju iaf bra ut</p></li>
-                <li><p>Och det ser ju också bra ut!</p></li>
-            </ul>
-            <img src="img 3.jpg" id="float_img_2">
-        </div>
-    </a>
-
-
-    <!--
-    att ha:
-
-
-    - taggar: h1, p, h2, h3, ul (lista), li (lista), flera bilder och flera länkar
-    - använd font-famemly, color, font-size, background color, width, height, id och klass
-    - använd en div tag
-    - bild med alt som är float
-
-    -->
 </body>
 </html>
