@@ -321,6 +321,19 @@ footer {
     }
 }
 
+#index_text_show_when_phone {
+    display: none;
+}
+@media (max-width: 550px) {
+    #index_text_hide_when_phone {
+        display: none;
+    }
+    #index_text_show_when_phone {
+        display: inherit;
+        text-align: start;
+    }   
+}
+
 /*5 första, 2 andra, 10 tredje*/
 /*ord 1*/
 #bottom_index_page_span_word_1:hover > .bottom_index_page_span_letter:nth-child(1) { /*d*/ 
