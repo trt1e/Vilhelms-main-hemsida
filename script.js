@@ -5,7 +5,10 @@
     "./östra_löken_pdf/Östra Löken upplaga 4.pdf#toolbar=0",
     "./östra_löken_pdf/Östra Löken upplaga 5.pdf#toolbar=0",
     "./östra_löken_pdf/Östra Löken upplaga 6.pdf#toolbar=0",
-    "./östra_löken_pdf/Östra Löken upplaga 7.pdf#toolbar=0"
+    "./östra_löken_pdf/Östra Löken upplaga 7.pdf#toolbar=0",
+    "./östra_löken_pdf/Östra Löken upplaga 8.pdf#toolbar=0",
+    "./östra_löken_pdf/Östra Löken upplaga 9.pdf#toolbar=0",
+    "./östra_löken_pdf/Östra Löken upplaga 10.pdf#toolbar=0"
 ]; // sätter upp så vi kan pulla destinationerna på PDF:erna
 Östra_Löken_utgåvor_namn = [
     "Östra Löken upplaga 1",
@@ -14,7 +17,10 @@
     "Östra Löken upplaga 4",
     "Östra Löken upplaga 5",
     "Östra Löken upplaga 6",
-    "Östra Löken upplaga 7"
+    "Östra Löken upplaga 7",
+    "Östra Löken upplaga 8",
+    "Östra Löken upplaga 9",
+    "Östra Löken upplaga 10"
 ]; // Här sätter vi upp namnen så att de kan sättas under PDF:en
 let mängdÖstraLöken;
 mängdÖstraLöken = Östra_Löken_utgåvor.length;
