@@ -1,0 +1,89 @@
+:root {
+    --bg: #42d275;
+    --text: #06180d;
+    --primary: #89dbe3;
+    --accent: #64b7da;
+}
+* {
+    margin: 0;
+}
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/*BIRTHDAY CARD*/
+#birthdaycard {
+    width: 100vw;
+    height: 100vh;
+}
+#birthdaycard_head_text {
+    font-size: 5rem;
+    text-align: center;
+}
+#birthdaycard_image {
+    width: 20rem;
+    height: auto;
+    border-radius: 2px;
+    position: absolute;
+    top: 35%;
+    left: 8%;
+    transform: rotate(-4deg);
+}
+#birthdaycard_1 {
+    font-size: 24rem;
+    position: absolute;
+    top: 10%;
+    left: 34%;
+    transform: rotate(-5deg);
+}
+#birthdaycard_2 {
+    font-size: 24rem;
+    position: absolute;
+    top: 12%;
+    left: 53%;
+    transform: rotate(3deg);
+}
+#birthdaycard_år {
+    font-size: 8rem;
+    position: absolute;
+    top: 40%;
+    left: 74%;
+    transform: rotate(2deg);
+}
+#birthdaycard_sender {
+    font-size: 2rem;
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+}
+#birthdaycard_scroll_thing {
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+}
+
+/*IMAGE COLAGE*/
+#imagecolage {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image_in_colage {
+    width: 90vw;
+    height: 90vh;
+    object-fit: cover;
+    padding: 1rem;
+    border-radius: 10rem;
+    image-resolution: reverse;
+}
+
+
+#obama_quoute {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 10rem;
+}
