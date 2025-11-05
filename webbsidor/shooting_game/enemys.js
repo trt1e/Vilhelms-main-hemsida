@@ -40,11 +40,12 @@ const imgsToInhairit = [
     "typescript.png",
 ];
 imagesInMovment = [];
+enemysThatKilledThePlayer = [];
 idTicker = 0;
-let counterTicker = 0
+let counterTicker = 0;
 let enemysTicker = 0;
 let scoreTicker = 0;
-let gameHasEnded = false
+let gameHasEnded = false;
 const enemySpeed = 1.5;
 
 // delay between spawn (in seconds)
@@ -52,7 +53,7 @@ let spawnDelay = 2.3 * 100;
 
 // the players helth
 let playerHp = 4;
-let playerHit = false
+let playerHit = false;
 
 // make sure you only get damaged once on impact and then not again until it isnt tuching anymore
 let loseHealth = false;
@@ -61,11 +62,11 @@ window.setInterval(moveImages, 10);
 
 function endGame() {
     if (!gameHasEnded) {
-        alert("YOU ARE DEAD! YOUR SCORE WAS: " + scoreTicker)
-        window.location.reload()
-        gameHasEnded = true
-    }
-}
+        alert("YOU ARE DEAD! YOUR SCORE WAS: " + scoreTicker + "! These programing languages are now officialy better than HTML5:" + enemysThatKilledThePlayer);
+        window.location.reload();
+        gameHasEnded = true;
+    };
+};
 
 function updateScore() {
     scoreTicker = scoreTicker + 1;
@@ -86,6 +87,7 @@ function loadNewImage(dir, x, y) {
         x: x,
         y: y,
         hp: 6,
+        imageName: dir,
     };
     imagesInMovment.push(imagePackage);
     idTicker = idTicker + 1
@@ -95,7 +97,7 @@ function moveImages() { // move the images towords the player
     if (counterTicker === Math.round(spawnDelay)) {
         loadInRandomEnemy();
         spawnDelay = spawnDelay * 0.99;
-        counterTicker = 0
+        counterTicker = 0;
     };
     counterTicker = counterTicker + 1;
     for (let imageNumber = 0; imageNumber < imagesInMovment.length; imageNumber++) {
@@ -182,6 +184,8 @@ function moveImages() { // move the images towords the player
             let enemyChildId = document.getElementById(imageInfo.id);
             document.body.removeChild(enemyChildId);
             imagesInMovment.splice(imageNumber, 1);
+            // add the enemy that killed the player to a list to keep track of it
+            enemysThatKilledThePlayer.push(" " + imageInfo.imageName.replace(".png", ""))
         };
 
         // update helth number
@@ -251,18 +255,18 @@ function loadInRandomEnemy() {
     let randomTop = Math.floor(Math.random() * screenHeight);
 
     // get the random number
-    let randomNumber = Math.random() * 100
+    let randomNumber = Math.random() * 100;
 
     if ((randomNumber < 25) && (randomNumber >= 0)) { // if the image will be placed on the top side
-        loadNewImage(randomImage, randomLeft, extraHeight * -1)
+        loadNewImage(randomImage, randomLeft, extraHeight * -1);
     }
     else if ((randomNumber < 50) && (randomNumber >= 25)) { // if the image will be placed on the left side
-        loadNewImage(randomImage, extraWidth * -1, randomTop)
+        loadNewImage(randomImage, extraWidth * -1, randomTop);
     }
     else if ((randomNumber < 75) && (randomNumber >= 50)) { // if the image will be placed on the bottom side
-        loadNewImage(randomImage, randomLeft, extraHeight + screenHeight)
+        loadNewImage(randomImage, randomLeft, extraHeight + screenHeight);
     }
     else { // if the image will be placed on the right side
-        loadNewImage(randomImage, extraWidth + screenWidth, randomTop)
-    }
-}
+        loadNewImage(randomImage, extraWidth + screenWidth, randomTop);
+    };
+};
