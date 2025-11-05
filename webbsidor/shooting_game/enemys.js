@@ -7,7 +7,7 @@ Att göra här:
 [x] gör så att de spawnas slumpmässigt i utkanten av skärmen
 [x] gör så att de har HP och förlorar det när de nuddas av kullor
     - gör så de dör när de har mindre än 1 hp   
-[] gör så att spelaren dör om den nuddar 3 st
+[x] gör så att spelaren dör om den nuddar 3 st
     - fienden ska också dö om spelaren nuddas
 [x] gör en score
 [] gör en helth bar som är "Webbutveckling - Vad är HTML?"
@@ -41,13 +41,14 @@ const imgsToInhairit = [
 ];
 imagesInMovment = [];
 idTicker = 0;
+let counterTicker = 0
 let enemysTicker = 0;
 let scoreTicker = 0;
 let gameHasEnded = false
 const enemySpeed = 1.5;
 
 // delay between spawn (in seconds)
-let spawnDelay = 3;
+let spawnDelay = 2.3 * 100;
 
 // the players helth
 let playerHp = 4;
@@ -57,7 +58,6 @@ let playerHit = false
 let loseHealth = false;
 
 window.setInterval(moveImages, 10);
-window.setInterval(loadInRandomEnemy, spawnDelay * 1000);
 
 function endGame() {
     if (!gameHasEnded) {
@@ -92,7 +92,12 @@ function loadNewImage(dir, x, y) {
 };
 
 function moveImages() { // move the images towords the player
-    spawnDelay = spawnDelay * 0.8
+    if (counterTicker === Math.round(spawnDelay)) {
+        loadInRandomEnemy();
+        spawnDelay = spawnDelay * 0.99;
+        counterTicker = 0
+    };
+    counterTicker = counterTicker + 1;
     for (let imageNumber = 0; imageNumber < imagesInMovment.length; imageNumber++) {
         let imageInfo = imagesInMovment[imageNumber];
         let imageToMove = document.getElementById(imageInfo.id);
