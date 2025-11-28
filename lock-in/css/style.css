@@ -23,6 +23,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 main {
     background-color: var(--bg-color);
@@ -33,6 +34,9 @@ footer {
     margin-top: 2rem;
     width: 100%;
     font-size: 1.25rem;
+}
+#email_footer_text:hover {
+    text-decoration: underline;
 }
 @media (width >= 0) and (width <= 100em) {
     main {
@@ -87,6 +91,9 @@ a:hover {
 #main_header_for_page {
     font-size: 9rem;
     margin-bottom: -1.5rem;
+}
+#main_header_for_page:hover {
+    text-shadow: 2px 2px var(--secondary-color);
 }
 #main_under_text {
     font-size: 2rem;
