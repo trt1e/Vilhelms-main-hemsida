@@ -121,7 +121,7 @@ a:hover {
 a.content_container:hover {
     background-color: var(--dark-bg-color);
 }
-@media (width >= 0) and (width <= 70em) {
+@media (width >= 0) and (width <= 50em) {
     a.content_container {
         background-color: var(--dark-bg-color);
     }
