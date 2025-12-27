@@ -1,0 +1,48 @@
+:root {
+    --bg-color: #fdfbfb;
+    --select-color: #ede6e6;
+    --text-color: #141010;
+    --primary-color: #b25a53;
+
+    background-color: var(--bg-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+
+    background: #546187;
+    background: linear-gradient(63deg,rgba(84, 97, 135, 1) 0%, rgba(93, 153, 199, 1) 50%, rgba(51, 76, 107, 1) 100%);
+}
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+#text {
+    margin: 2rem;
+    font-size: 2rem;
+}
+
+#kort {
+    width: 30rem;
+    position: absolute;
+    right: 10rem;
+    bottom: 5rem;
+    transform: rotate(3deg);
+}
+
+#från {
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+}
