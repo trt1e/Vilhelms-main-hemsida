@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vilhelms hemsida</title>
+    <link rel="icon" type="image/x-icon" href="./images/icons/vgsites-icon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/östra_löken.css">
+    <script src="./js/check_dark_mode.js"></script> <!--This needs to be loaded first to ensure a good user experiance-->
+</head>
+<body>
+    <div id="load_cover">
+        <h1>vgsites.se laddar…</h1>
+        <p>Om det här tar en längre tid så är någonting fel</p>
+    </div>
+
+    <header>
+        <div class="header glass_background"></div>
+        <div class="header scrollabel_header glass_foreground glass_0.5rem_padding">
+            <div id="header_maix_chunk">
+                <div class="header_div">
+                    <a href="./index.html" title='Gå till "hem"'>hem</a>
+                </div>
+                <div class="header_div">
+                    <a href="./webbsidor.html" title='Gå till "webbsidor"'>webbsidor</a>
+                </div>
+                <div class="header_div currant_tab">
+                    <a href="./östralöken.html" title='Gå till "östra löken"'>östra löken</a>
+                </div>
+                <div class="header_div">
+                    <a href="./ommig.html" title='Gå till "om mig"'>om mig</a>
+                </div>
+            </div>
+            <div id="header_vertical_border"></div>
+            <div id="header_UI_switch_container" title="Switch color mode">
+                <div class="header_UI_switch glass_background"></div>
+                <div class="header_UI_switch glass_foreground">
+                    <button onclick="switch_light()" class="header_UI_switch_button" id="header_UI_switch_button_style"></button>
+                    <button onclick="switch_dark()" class="header_UI_switch_button" id="header_UI_switch_button_read"></button>
+                </div>
+            </div>
+            <div id="header_UI_switch_selector" title="Switch color mode"></div>
+        </div>
+    </header>
+    <div class="background_colorblob background_colorblob_primary_color"></div>
+    <div class="background_colorblob background_colorblob_primary_color"></div>
+    <div class="background_colorblob background_colorblob_secondary_color"></div>
+    <div class="background_colorblob background_colorblob_secondary_color"></div>
+    <div class="background_colorblob background_colorblob_extra_color"></div>
+    <div class="background_colorblob background_colorblob_extra_color"></div>
+    <main>
+        <div class="main glass_background"></div>
+        <div class="main glass_foreground glass_4rem_padding">
+            <h1>Här är Vilhelms Östra Löken sida</h1>
+            <div id="main_grid">
+                <div class="main_container_1 main_content_container">
+                    <h2>Östra Löken, va?</h2>
+                    <p>Östra Löken är en skolsatirtidning som distribueras på Östra Gymnasiet. Tidningen startades maj 2025 av Vilhelm och Joar och har sedan dess tagit skolan med storm. När denna artikel skrivs så har Löken mer än 200 Instagram-följare och en stor läsarbas över hela skolan. Tidningen drivs utan vinst och framför allt från engagemanget av dess skribenter och aktörer.</p>
+                </div>
+                <div class="main_container_click main_container_2 glass_background"></div>
+                <a href="https://linktr.ee/ostraloken" target="_blank" class="main_container_click main_container_2 main_content_container glass_foreground glass_4rem_padding">
+                    <h2>Östra Löken linktr.ee</h2>
+                    <p>Klicka här för att dirigeras till Östra Lökens linktr.ee. Där finns det alla länkar man skulle behöva: formulär för insändare, formulär för hear me out, formulär för skåpleverans, e-postadress, Instagram & mer!</p>
+                </a>
+                <div class="main_container_click main_container_3 glass_background"></div>
+                <a href="./upplagor.html" class="main_container_click main_container_3 main_content_container glass_foreground glass_4rem_padding">
+                    <h2>Upplagor</h2>
+                    <p>Här finns ett enkelt, manuellt uppdaterat, register över alla upplagor.</p>
+                    <p class="main_content_footnote">Uppdaterades senast: 28/12/2025.</p>
+                </a>
+            </div>
+        </div>
+    </main>
+    <div id="body_filler"></div>
+    <footer>
+        <p class="footer_content footer_text">Denna sida är gjord av Vilhelm</p>
+        <div class="footer_content">
+            <p class="footer_text">Kontakta mig på ‎</p>
+            <a href="mailto:vilhelm.grill@gmail.com" target="_blank" title="Send a mail to Vilhelm" class="footer_text">vilhelm.grill@gmail.com</a>
+        </div>
+        <div class="footer_content">
+            <p class="footer_text">Hitta denna sida på ‎</p>
+            <a href="https://github.com/trt1e/Vilhelms-main-hemsida" target="_blank" title="Go to this websites Github page" class="footer_text">Github</a>
+        </div>
+    </footer>
+    
+    <script src="./js/convert_to_rem.js"></script>
+    <script src="./js/fix_body_height.js"></script>
+    <script src="./js/scroll_header.js"></script>
+    <script src="./js/move_bg_blobs.js"></script>
+    <script src="./js/switch_color_mode.js"></script>
+    <script src="./js/dont_animate_when_rezising.js"></script>
+</body>
+</html>

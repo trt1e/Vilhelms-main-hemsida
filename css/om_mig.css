@@ -1,0 +1,31 @@
+/*Main*/
+.main_content_container {
+    margin-bottom: 1.5rem;
+}
+.main_content_container:last-child {
+    margin-bottom: 0.5rem;
+}
+
+/*VG image*/
+#vg_img_container {
+    display: grid;
+    float: right;
+}
+.vg_img {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 3rem;
+    grid-column: 1;
+    grid-row: 1;
+}
+@media (width <= 40rem) {
+    .vg_img {
+        display: none;
+    }
+}
+.vg_img.glass_background {
+    object-fit: contain;
+}
+.vg_img.glass_foreground {
+    backdrop-filter: blur(0px);
+}

@@ -1,0 +1,13 @@
+/*Main*/
+.main_content_container {
+    margin-bottom: 1.5rem;
+}
+.main_content_container:last-child {
+    margin-bottom: 0.5rem;
+}
+
+/*Text styling*/
+.main_content_footnote {
+    font-size: 1rem;
+    margin-top: 0.3rem;
+}

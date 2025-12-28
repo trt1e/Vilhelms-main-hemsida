@@ -1,0 +1,35 @@
+/*Main & grid*/
+.main_content_container {
+    margin-bottom: 1.5rem;
+}
+.main_content_container:last-child {
+    margin-bottom: 0.5rem;
+}
+
+#main_grid {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(4, fit-content); /*y*/
+    grid-template-columns: 1fr; /*x*/
+}
+.main_container_1 {
+    grid-row: 1;
+}
+.main_container_2 {
+    grid-row: 2;
+}
+.main_container_3 {
+    grid-row: 3;
+}
+.main_container_click {
+    grid-column: 1;
+
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+/*Text styling*/
+.main_content_footnote {
+    font-size: 1rem;
+    margin-top: 0.3rem;
+}

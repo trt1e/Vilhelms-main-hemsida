@@ -1,0 +1,89 @@
+/*Body & main*/
+#main_organizing_large_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.main_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.4rem;
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 0.5rem;
+}
+@media (width <= 40rem) {
+    .main_grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*Cards*/
+.main_content_card {
+    width: 100%;
+    height: 15rem;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s ease; 
+}
+.main_content_card:nth-child(1) { /*The cards to the top left*/
+    border-top-left-radius: 2rem;
+}
+.main_content_card:nth-child(2) { /*The cards to the top right*/
+    border-top-right-radius: 2rem;
+}
+.main_content_card:nth-last-child(1) { /*The cards to the bottom right*/
+    border-bottom-right-radius: 2rem;
+}
+.main_content_card:nth-last-child(2) { /*The cards to the bottom left*/
+    border-bottom-left-radius: 2rem;
+}
+.main_content_card.glass_background {
+    filter: opacity(40%);
+    overflow: hidden;
+}
+.main_content_card.glass_foreground {
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    transition: all 0.4s ease; 
+}
+
+/*Cards on hover*/
+.main_content_card.backgroundcard_hover_active {
+    filter: opacity(75%);
+    border-radius: 0.8rem;
+    transform: rotateX(3deg) translateY(-3px);
+}
+.main_content_card.foregroundcard_hover_active {
+    color: transparent;
+    border-radius: 0.8rem;
+    backdrop-filter: blur(0px);
+    transform: rotateX(3deg) translateY(-3px);
+}
+
+/*Img*/
+.main_content_card_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    transition: all 0.4s ease; 
+}
+
+/*Img on hover*/
+.main_content_card_img_hover_active {
+    transform: scale(1.15);
+}
+
+/*Cards text*/
+.main_card_text {
+    text-align: center;
+    margin-top: 0.7rem;
+    width: 80%;
+    transition: all 0.4s ease; 
+}
