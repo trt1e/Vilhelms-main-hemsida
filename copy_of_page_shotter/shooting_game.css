@@ -1,0 +1,61 @@
+:root {
+    overflow: hidden; /*To prevent scrolling*/
+    --bg-color: #fefefe;
+    --darker-bg-color: #eee;
+    --main-text-color: #b93e1f;
+    --sub-text-color: #333;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./Content/bakgrund.png");
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    user-select: none;
+    border-radius: 10px;
+}
+.h1 {
+    user-select: none;
+    color: var(--main-text-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.6rem;
+}
+.h2 {
+    user-select: none;
+    color: var(--main-text-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+}
+p {
+    user-select: none;
+    color: var(--sub-text-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main {
+    background-color: var(--darker-bg-color);
+    width: 200px;
+    padding: 1rem;
+    outline: 1px solid #ccc;
+}
+
+.top_right_text {
+    padding-top: 0.5rem;
+}
+
+#main_player_object {
+    position: absolute;
+    left: calc(50% - 5rem);
+    top: calc(50% - 5rem); 
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+}

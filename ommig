@@ -6,7 +6,7 @@
     <title>Vilhelms hemsida</title>
     <link rel="icon" type="image/x-icon" href="./images/icons/vgsites-icon.ico">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/östra_löken.css">
+    <link rel="stylesheet" href="./css/om_mig.css">
     <script src="./js/check_dark_mode.js"></script> <!--This needs to be loaded first to ensure a good user experiance-->
 </head>
 <body>
@@ -20,16 +20,16 @@
         <div class="header scrollabel_header glass_foreground glass_0.5rem_padding">
             <div id="header_maix_chunk">
                 <div class="header_div">
-                    <a href="./index.html" title='Gå till "hem"'>hem</a>
+                    <a href="./index" title='Gå till "hem"'>hem</a>
                 </div>
                 <div class="header_div">
-                    <a href="./webbsidor.html" title='Gå till "webbsidor"'>webbsidor</a>
+                    <a href="./webbsidor" title='Gå till "webbsidor"'>webbsidor</a>
+                </div>
+                <div class="header_div">
+                    <a href="./östralöken" title='Gå till "östra löken"'>östra löken</a>
                 </div>
                 <div class="header_div currant_tab">
-                    <a href="./östralöken.html" title='Gå till "östra löken"'>östra löken</a>
-                </div>
-                <div class="header_div">
-                    <a href="./ommig.html" title='Gå till "om mig"'>om mig</a>
+                    <a href="./ommig" title='Gå till "om mig"'>om mig</a>
                 </div>
             </div>
             <div id="header_vertical_border"></div>
@@ -52,23 +52,22 @@
     <main>
         <div class="main glass_background"></div>
         <div class="main glass_foreground glass_4rem_padding">
-            <h1>Här är Vilhelms Östra Löken sida</h1>
-            <div id="main_grid">
-                <div class="main_container_1 main_content_container">
-                    <h2>Östra Löken, va?</h2>
-                    <p>Östra Löken är en skolsatirtidning som distribueras på Östra Gymnasiet. Tidningen startades maj 2025 av Vilhelm och Joar och har sedan dess tagit skolan med storm. När denna artikel skrivs så har Löken mer än 200 Instagram-följare och en stor läsarbas över hela skolan. Tidningen drivs utan vinst och framför allt från engagemanget av dess skribenter och aktörer.</p>
-                </div>
-                <div class="main_container_click main_container_2 glass_background"></div>
-                <a href="https://linktr.ee/ostraloken" target="_blank" class="main_container_click main_container_2 main_content_container glass_foreground glass_4rem_padding">
-                    <h2>Östra Löken linktr.ee</h2>
-                    <p>Klicka här för att dirigeras till Östra Lökens linktr.ee. Där finns det alla länkar man skulle behöva: formulär för insändare, formulär för hear me out, formulär för skåpleverans, e-postadress, Instagram & mer!</p>
-                </a>
-                <div class="main_container_click main_container_3 glass_background"></div>
-                <a href="./upplagor.html" class="main_container_click main_container_3 main_content_container glass_foreground glass_4rem_padding">
-                    <h2>Upplagor</h2>
-                    <p>Här finns ett enkelt, manuellt uppdaterat, register över alla upplagor.</p>
-                    <p class="main_content_footnote">Uppdaterades senast: 28/12/2025.</p>
-                </a>
+            <h1>Här står det om Vilhelm</h1>
+            <div id="vg_img_container">
+                <img class="vg_img glass_background" src="./images/images/PXL_20251116_133549684-EDIT.jpg" alt="Image of Vilhelm">
+                <div class="vg_img glass_foreground" title="Bild på Vilhelm"></div>
+            </div>
+            <div class="main_content_container">
+                <h2>Kort om mig</h2>
+                <p>Jag är en teknikintresserad, mångkunnig, kollektivtrafikengagerad och samhällsvetande gymnasieelev på 17 vårar. Jag offrade lågstadiet till PS3 och Minecraft, mellanstadiet uppslukades av Overwatch, högstadiet försvann till Scrap Mechanic, Valorant och Hitman. Började programmera Python i 7:an och nu i gymnasiet har jag fortsatt med det och gått över mer till full-stack-utveckling. Tyvärr har jag generellt sett inte lika mycket tid som tidigare att dedikera till spel, men jag spelar ändå då och då. Istället tillbringar jag min tid mer åt pluggande och egna projekt. Det inkluderar projekt som Östra Kulten, broschyren “Om krisen, kriget eller Ulf Kristersson kommer” och Östra Radion. Men den största av dem är troligtvis den omtalade skolsatirtidningen: Östra Löken, som jag grundade tillsammans med Joar VT25.</p>
+            </div>
+            <div class="main_content_container">
+                <h2>Mina mål</h2>
+                <p>Jag kommer ständigt på nya idéer på projekt och några av dem blir färdiga till någon nivå. Men mitt mål är inte att alla projekt ska bli klara, utan att genom att jag kastar så många ägg mot väggen att den snart spricker; göra mitt rykte legendariskt i skolans korridorer.</p>
+            </div>
+            <div class="main_content_container">
+                <h2>Erfarenheter</h2>
+                <p>Som en flitig, smått perfektionistisk och idéfylld person så har jag mycket erfarenhet av riktigt arbete. Det inkluderar hur man håller sig till ett schema, hur man jobbar i grupp på ett stort projekt och att skriva professionellt. Jag har också mer grundläggande praktiska erfarenheter som att sköta en kassa, servera gäster och att arbeta i en kontorsmiljö. Jag är också väldigt erfaren i både svenska och engelska med mycket tid utomlands och i olika delar av Sverige. Allt det utan att behöva förlita mig på AI-fuskverktyg.</p>
             </div>
         </div>
     </main>

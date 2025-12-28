@@ -6,7 +6,7 @@
     <title>Vilhelms hemsida</title>
     <link rel="icon" type="image/x-icon" href="./images/icons/vgsites-icon.ico">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/webbsidor.css">
+    <link rel="stylesheet" href="./css/upplagor.css">
     <script src="./js/check_dark_mode.js"></script> <!--This needs to be loaded first to ensure a good user experiance-->
 </head>
 <body>
@@ -20,16 +20,16 @@
         <div class="header scrollabel_header glass_foreground glass_0.5rem_padding">
             <div id="header_maix_chunk">
                 <div class="header_div">
-                    <a href="./index.html" title='Gå till "hem"'>hem</a>
-                </div>
-                <div class="header_div currant_tab">
-                    <a href="./webbsidor.html" title='Gå till "webbsidor"'>webbsidor</a>
+                    <a href="./index" title='Gå till "hem"'>hem</a>
                 </div>
                 <div class="header_div">
-                    <a href="./östralöken.html" title='Gå till "östra löken"'>östra löken</a>
+                    <a href="./webbsidor" title='Gå till "webbsidor"'>webbsidor</a>
                 </div>
                 <div class="header_div">
-                    <a href="./ommig.html" title='Gå till "om mig"'>om mig</a>
+                    <a href="./östralöken" title='Gå till "östra löken"'>östra löken</a>
+                </div>
+                <div class="header_div">
+                    <a href="./ommig" title='Gå till "om mig"'>om mig</a>
                 </div>
             </div>
             <div id="header_vertical_border"></div>
@@ -52,37 +52,13 @@
     <main>
         <div class="main glass_background"></div>
         <div class="main glass_foreground glass_4rem_padding">
-            <h1>Här har vi Vilhelms hemsidor</h1>
-            <div id="main_organizing_large_container">
-                <div class="main_grid">
-                    <div class="main_content_card glass_background">
-                        <img class="main_content_card_img" src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png">
-                    </div> 
-                    <div class="main_content_card glass_background">
-                        <img class="main_content_card_img" src="https://cdn.pixabay.com/photo/2018/08/04/11/30/draw-3583548_1280.png">
-                    </div>
-                    <div class="main_content_card glass_background">
-                        <img class="main_content_card_img" src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D">
-                    </div> 
-                    <div class="main_content_card glass_background">
-                        <img class="main_content_card_img" src="https://static.vecteezy.com/system/resources/thumbnails/057/068/323/small/single-fresh-red-strawberry-on-table-green-background-food-fruit-sweet-macro-juicy-plant-image-photo.jpg">
-                    </div>
-                </div>
-                <div class="main_grid">
-                    <a class="main_content_card glass_foreground">
-                        <h2 class="main_card_text">Hemsida namn</h2>
-                    </a>
-                    <a class="main_content_card glass_foreground">
-                        <h2 class="main_card_text">Hemsida namn</h2>
-                    </a>
-                    <a class="main_content_card glass_foreground">
-                        <h2 class="main_card_text">Hemsida namn</h2>
-                    </a>
-                    <a class="main_content_card glass_foreground">
-                        <h2 class="main_card_text">Hemsida namn</h2>
-                    </a>
-                </div>
+            <h1>Östra Löken upplagor</h1>
+            <div id="pdf_nav_UI">
+                <button class="pdf_nav_buttons" onclick="previousPDF()">tidigare</button>
+                <button class="pdf_nav_buttons" onclick="nextPDF()">nästa</button>
             </div>
+            <p id="pdf_upplaga_number">Upplaga 1</p>
+            <iframe id="main_pdf" src="./östra_löken_upplagor/Östra löken upplaga 1.pdf"></iframe>
         </div>
     </main>
     <div id="body_filler"></div>
@@ -103,7 +79,7 @@
     <script src="./js/scroll_header.js"></script>
     <script src="./js/move_bg_blobs.js"></script>
     <script src="./js/switch_color_mode.js"></script>
-    <script src="./js/webbsidor_hover_effect.js"></script>
     <script src="./js/dont_animate_when_rezising.js"></script>
+    <script src="./js/upplagor_handle_pdf.js"></script>
 </body>
 </html>

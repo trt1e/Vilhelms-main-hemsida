@@ -8,9 +8,6 @@ window.addEventListener("load", () => {
         // place the user at the top of the screen
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE and Opera
-        
-        // let the page scroll again
-        document.body.style.overflow = "auto";
     }, 1)
 });
 window.addEventListener("resize", placeBlobRandomInViewport);

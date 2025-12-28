@@ -312,7 +312,7 @@ a.footer_text {
     height: calc(100vh - 2rem);
     padding: 1rem;
     z-index: 100;
-    overflow-y: hidden;
+    overflow: hidden;
     background-color: var(--bg-color);
 
     display: flex;
