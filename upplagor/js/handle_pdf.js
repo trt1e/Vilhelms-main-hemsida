@@ -27,5 +27,5 @@ function PDFHandle() {
     console.log(pdfContent);
     console.log(counter);
     pdfNumber.innerText = `Upplaga ${counter} / ${amoutPDfs}`;
-    pdfContent.src = `./östra_löken_upplagor/Östra löken upplaga ${counter}.pdf`;
+    pdfContent.src = `./pdfs/Östra_Löken_upplaga_${counter}.pdf`;
 }

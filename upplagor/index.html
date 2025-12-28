@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vilhelms hemsida</title>
-    <link rel="icon" type="image/x-icon" href="./images/icons/vgsites-icon.ico">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/upplagor.css">
-    <script src="./js/check_dark_mode.js"></script> <!--This needs to be loaded first to ensure a good user experiance-->
+    <link rel="icon" type="image/x-icon" href="../images/icons/vgsites-icon.ico">
+    <link rel="stylesheet" href="../css/universal_styling.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="../js/check_dark_mode.js"></script> <!--This needs to be loaded first to ensure a good user experiance-->
 </head>
 <body>
     <div id="load_cover">
@@ -20,16 +20,16 @@
         <div class="header scrollabel_header glass_foreground glass_0.5rem_padding">
             <div id="header_maix_chunk">
                 <div class="header_div">
-                    <a href="./index" title='Gå till "hem"'>hem</a>
+                    <a href="../index.html" title='Gå till "hem"'>hem</a>
                 </div>
                 <div class="header_div">
-                    <a href="./webbsidor" title='Gå till "webbsidor"'>webbsidor</a>
+                    <a href="../webbsidor/index.html" title='Gå till "webbsidor"'>webbsidor</a>
                 </div>
                 <div class="header_div">
-                    <a href="./östralöken" title='Gå till "östra löken"'>östra löken</a>
+                    <a href="../webbsidor/index.html" title='Gå till "östra löken"'>östra löken</a>
                 </div>
                 <div class="header_div">
-                    <a href="./ommig" title='Gå till "om mig"'>om mig</a>
+                    <a href="../ommig/index.html" title='Gå till "om mig"'>om mig</a>
                 </div>
             </div>
             <div id="header_vertical_border"></div>
@@ -58,7 +58,7 @@
                 <button class="pdf_nav_buttons" onclick="nextPDF()">nästa</button>
             </div>
             <p id="pdf_upplaga_number">Upplaga 1</p>
-            <iframe id="main_pdf" src="./östra_löken_upplagor/Östra löken upplaga 1.pdf"></iframe>
+            <iframe id="main_pdf" src="./pdfs/Östra_Löken_upplaga_1.pdf"></iframe>
         </div>
     </main>
     <div id="body_filler"></div>
@@ -66,20 +66,20 @@
         <p class="footer_content footer_text">Denna sida är gjord av Vilhelm</p>
         <div class="footer_content">
             <p class="footer_text">Kontakta mig på ‎</p>
-            <a href="mailto:vilhelm.grill@gmail.com" target="_blank" title="Send a mail to Vilhelm" class="footer_text">vilhelm.grill@gmail.com</a>
+            <a href="mailto:vilhelm.grill@gmail.com" title="Skicka en e-post till Vilhelm" class="footer_text">vilhelm.grill@gmail.com</a>
         </div>
         <div class="footer_content">
             <p class="footer_text">Hitta denna sida på ‎</p>
-            <a href="https://github.com/trt1e/Vilhelms-main-hemsida" target="_blank" title="Go to this websites Github page" class="footer_text">Github</a>
+            <a href="https://github.com/trt1e/Vilhelms-main-hemsida" target="_blank" title="Gå till denna hemsidas Github sida" class="footer_text">Github</a>
         </div>
     </footer>
     
-    <script src="./js/convert_to_rem.js"></script>
-    <script src="./js/fix_body_height.js"></script>
-    <script src="./js/scroll_header.js"></script>
-    <script src="./js/move_bg_blobs.js"></script>
-    <script src="./js/switch_color_mode.js"></script>
-    <script src="./js/dont_animate_when_rezising.js"></script>
-    <script src="./js/upplagor_handle_pdf.js"></script>
+    <script src="../js/convert_to_rem.js"></script>
+    <script src="../js/fix_body_height.js"></script>
+    <script src="../js/scroll_header.js"></script>
+    <script src="../js/move_bg_blobs.js"></script>
+    <script src="../js/switch_color_mode.js"></script>
+    <script src="./js/handle_pdf.js"></script>
+    <script src="../js/dont_animate_when_rezising.js"></script>
 </body>
 </html>
