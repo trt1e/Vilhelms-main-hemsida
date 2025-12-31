@@ -59,11 +59,11 @@
         <div class="main glass_foreground glass_4rem_padding">
             <h1>Östra Löken upplagor</h1>
             <div id="pdf_nav_UI">
-                <button class="pdf_nav_buttons" onclick="previousPDF()">tidigare</button>
-                <button class="pdf_nav_buttons" onclick="nextPDF()">nästa</button>
+                <button class="pdf_nav_buttons" aria-label="Tidigare upplaga" onclick="previousPDF()">tidigare</button>
+                <button class="pdf_nav_buttons" aria-label="Nästa upplaga" onclick="nextPDF()">nästa</button>
             </div>
             <p id="pdf_upplaga_number">Upplaga 1</p>
-            <iframe id="main_pdf" src="./pdfs/Östra_Löken_upplaga_1.pdf"></iframe>
+            <iframe id="main_pdf" title="Östra Löken upplagor" src="./pdfs/Östra_Löken_upplaga_1.pdf"></iframe>
         </div>
     </main>
     <div id="body_filler"></div>
