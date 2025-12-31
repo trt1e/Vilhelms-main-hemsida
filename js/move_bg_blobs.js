@@ -11,10 +11,16 @@ window.addEventListener("load", () => {
     }, 1)
 });
 window.addEventListener("resize", placeBlobRandomInViewport);
-window.setInterval(placeBlobRandom, 5000)
+window.setInterval(() => {
+    let backgroundColorBlob = document.getElementsByClassName("background_colorblob"); 
+    for (let element = 0; element < backgroundColorBlob.length; element++) {
+        let elementBlob = backgroundColorBlob[element];
+        elementBlob.style.transition = "4.6s";
+    };
+    placeBlobRandom();
+}, 5000)
 
 function placeBlobRandom() {
-
     let screenWidth = document.documentElement.scrollWidth;
     let screenHeight = document.documentElement.scrollHeight;
     let backgroundColorBlob = document.getElementsByClassName("background_colorblob"); 
@@ -28,8 +34,7 @@ function placeBlobRandom() {
         let xPositionPx = randomX * (screenWidth - elementWidth);
         let yPositionPx = randomY * (screenHeight - elementHeight);
 
-        elementBlob.style.left = xPositionPx + "px";
-        elementBlob.style.top = yPositionPx + "px";
+        elementBlob.style.transform = "translate(" + xPositionPx + "px, " + yPositionPx + "px)";
     };
 };
 
@@ -47,8 +52,6 @@ function placeBlobRandomInViewport() {
         let xPositionPx = randomX * (screenWidth - elementWidth);
         let yPositionPx = randomY * (screenHeight - elementHeight);
 
-        elementBlob.style.left = xPositionPx + "px";
-        elementBlob.style.top = yPositionPx + "px";
-
+        elementBlob.style.transform = "translate(" + xPositionPx + "px, " + yPositionPx + "px)";
     };
 };
