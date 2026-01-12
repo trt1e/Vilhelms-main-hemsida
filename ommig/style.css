@@ -27,6 +27,6 @@
 .vg_img.glass_foreground {
     backdrop-filter: blur(0px);
     object-fit: contain;
-    filter: opacity(65%);
+    filter: opacity(40%);
     overflow: hidden;
 }
