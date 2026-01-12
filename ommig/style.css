@@ -10,6 +10,7 @@
 #vg_img_container {
     display: grid;
     float: right;
+    cursor: default;
 }
 .vg_img {
     width: 18rem;

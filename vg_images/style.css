@@ -1,0 +1,60 @@
+/*Body & main*/
+#main_organizing_large_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.main_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.4rem;
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 0.5rem;
+}
+@media (width <= 40rem) {
+    .main_grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*Cards*/
+.main_content_card {
+    width: 100%;
+    height: 15rem;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center; 
+    object-fit: cover;
+    transition: all 0.4s ease;
+}
+.main_content_card:nth-child(1) { /*The cards to the top left*/
+    border-top-left-radius: 2rem;
+}
+.main_content_card:nth-child(2) { /*The cards to the top right*/
+    border-top-right-radius: 2rem;
+}
+.main_content_card:nth-last-child(1) { /*The cards to the bottom right*/
+    border-bottom-right-radius: 2rem;
+}
+.main_content_card:nth-last-child(2) { /*The cards to the bottom left*/
+    border-bottom-left-radius: 2rem;
+}
+.main_content_card.glass_background {
+    filter: opacity(40%);
+    overflow: hidden;
+}
+.main_content_card.glass_foreground {
+    backdrop-filter: blur(0);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    transition: all 0.4s ease; 
+}
+
+/*Text styling*/
+h2 {
+    margin: 1rem;
+    text-align: center;
+}
