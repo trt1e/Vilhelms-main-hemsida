@@ -2,7 +2,7 @@
 
 :root {
     /*Default, light, the one that matters, starts like this if browser has no preferance*/
-    background-color: white;
+    background-color: #E5E5E7;
 
     --bg-color: rgb(218, 218, 238); /*Background of main*/
     --real-bg: radial-gradient(ellipse at top, rgb(228, 226, 214), transparent), radial-gradient(ellipse at bottom, rgb(183, 183, 194), transparent); /*Background of screen*/
@@ -19,7 +19,7 @@
 
 :root[color-theme="light"] {
     /*light variants*/
-    background-color: white;
+    background-color: #E5E5E7;
 
     --bg-color: rgb(218, 218, 238); /*Background of main*/
     --real-bg: radial-gradient(ellipse at top, rgb(228, 226, 214), transparent), radial-gradient(ellipse at bottom, rgb(183, 183, 194), transparent); /*Background of screen*/
