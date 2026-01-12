@@ -24,9 +24,9 @@
         display: none;
     }
 }
-.vg_img.glass_background {
-    object-fit: contain;
-}
 .vg_img.glass_foreground {
     backdrop-filter: blur(0px);
+    object-fit: contain;
+    filter: opacity(65%);
+    overflow: hidden;
 }

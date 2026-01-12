@@ -26,7 +26,6 @@
     display: flex;
     justify-content: center; 
     object-fit: cover;
-    transition: all 0.4s ease;
 }
 .main_content_card:nth-child(1) { /*The cards to the top left*/
     border-top-left-radius: 2rem;
@@ -40,17 +39,9 @@
 .main_content_card:nth-last-child(2) { /*The cards to the bottom left*/
     border-bottom-left-radius: 2rem;
 }
-.main_content_card.glass_background {
-    filter: opacity(40%);
-    overflow: hidden;
-}
 .main_content_card.glass_foreground {
-    backdrop-filter: blur(0);
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
-    transition: all 0.4s ease; 
+    filter: opacity(65%);
+    overflow: hidden;
 }
 
 /*Text styling*/
