@@ -40,7 +40,7 @@
     border-bottom-left-radius: 2rem;
 }
 .main_content_card.glass_foreground {
-    opacity: 0;
+    opacity: 1;
     overflow: hidden;
 }
 
