@@ -13,6 +13,10 @@ function switch_light() {
     move_selector_light();
     document.documentElement.setAttribute("color-theme", "light");
     localStorage.setItem("color-theme", "light");
+
+    // set the UI of the browser and the device (in some cases) to the right color
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
+    themeMeta.setAttribute("content", "#ffffffff");
 };
 
 function move_selector_light() {
@@ -27,6 +31,10 @@ function switch_dark() {
     move_selector_dark();
     document.documentElement.setAttribute("color-theme", "dark");
     localStorage.setItem("color-theme", "dark");
+    
+    // set the UI of the browser and the device (in some cases) to the right color
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
+    themeMeta.setAttribute("content", "#121418");
 };
 
 function move_selector_dark() {
