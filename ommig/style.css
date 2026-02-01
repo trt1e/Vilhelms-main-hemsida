@@ -1,6 +1,11 @@
 /*Main*/
+h1 {
+    overflow-wrap: anywhere;
+}
+
 .main_content_container {
     margin-bottom: 1.5rem;
+    overflow-wrap: anywhere;
 }
 .main_content_container:last-child {
     margin-bottom: 0.5rem;
@@ -21,7 +26,9 @@
 }
 @media (width <= 40rem) {
     .vg_img {
-        display: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 1.5rem;
     }
 }
 .vg_img.glass_foreground {
