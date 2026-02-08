@@ -1,6 +1,6 @@
 const pdfContent = document.getElementById("main_pdf");
 const pdfNumber = document.getElementById("pdf_upplaga_number");
-const amoutPDfs = 25; // Change this when adding new upplagor
+const amoutPDfs = 26; // Change this when adding new upplagor
 let counter = amoutPDfs;
 
 window.addEventListener("load", () => {
