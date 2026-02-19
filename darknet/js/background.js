@@ -2,6 +2,7 @@ const inputOptions = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456
 
 window.addEventListener("load", () => { renderAllText(); });
 window.addEventListener("resize", () => { renderAllText(); });
+window.setInterval( () => { renderAllText(); }, 1000);
 
 function renderAllText() {
     const bgText = document.getElementById("background");

@@ -13,12 +13,17 @@ body {
 
 /* main */
 main {
-    margin: 2rem;
-    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 10rem;
+    margin-top: 3rem;
+    z-index: 2;
 }
 #welcome_title {
     text-align: center;
     font-size: 3rem;
+    margin-bottom: 2rem;
 }
 
 /* background text */
@@ -28,10 +33,10 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    color: #1f391c60;
+    color: #1f391c80;
     overflow: hidden;
     user-select: none;
     overflow-wrap: break-word;
-    z-index: 0;
-    mask: linear-gradient(to left, white 0%, transparent 35%, transparent 65%, white 100%);
+    z-index: 1;
+    mask: linear-gradient(to left, white 0%, transparent 30%, transparent 70%, white 100%);
 }
