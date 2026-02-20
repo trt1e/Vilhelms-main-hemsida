@@ -1,4 +1,5 @@
 const baseLightSpot = convertRemToPixels(0.5) + convertRemToPixels(9 + 9 + 9 + 9 - 0.2 + 0.8) + 2; // in px
+const mainOrganizingElement = document.getElementById("main_organizing_large_container")
 
 window.onload = function() {
     currentTheme = localStorage.getItem("color-theme");
@@ -10,7 +11,7 @@ window.onload = function() {
 };
 
 function switch_light() {
-    document.body.classList.add("resize-animation-stopper");
+    mainOrganizingElement.add("resize-animation-stopper");
 
     move_selector_light();
     document.documentElement.setAttribute("color-theme", "light");
@@ -24,7 +25,7 @@ function switch_light() {
 
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout( () => {
-        document.body.classList.remove("resize-animation-stopper");
+        mainOrganizingElement.remove("resize-animation-stopper");
     }, 400);
 };
 
@@ -37,7 +38,7 @@ function move_selector_light() {
 
 
 function switch_dark() {
-    document.body.classList.add("resize-animation-stopper");
+    mainOrganizingElement.add("resize-animation-stopper");
 
     move_selector_dark();
     document.documentElement.setAttribute("color-theme", "dark");
@@ -51,7 +52,7 @@ function switch_dark() {
 
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout( () => {
-        document.body.classList.remove("resize-animation-stopper");
+        mainOrganizingElement.remove("resize-animation-stopper");
     }, 400);
 };
 
