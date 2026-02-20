@@ -1,20 +1,17 @@
 const baseLightSpot = convertRemToPixels(0.5) + convertRemToPixels(9 + 9 + 9 + 9 - 0.2 + 0.8) + 2; // in px
 
 window.onload = function() {
-    document.body.classList.add("resize-animation-stopper");
     currentTheme = localStorage.getItem("color-theme");
     if (currentTheme === "dark") {
         move_selector_dark();
     } else {
         move_selector_light();
     };
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-        document.body.classList.remove("resize-animation-stopper");
-    }, 400);
 };
 
 function switch_light() {
+    document.body.classList.add("resize-animation-stopper");
+
     move_selector_light();
     document.documentElement.setAttribute("color-theme", "light");
     localStorage.setItem("color-theme", "light");
@@ -24,6 +21,11 @@ function switch_light() {
     if (themeMeta) {
         themeMeta.setAttribute("content", "#E5E5E7");
     };
+
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout( () => {
+        document.body.classList.remove("resize-animation-stopper");
+    }, 400);
 };
 
 function move_selector_light() {
@@ -35,6 +37,8 @@ function move_selector_light() {
 
 
 function switch_dark() {
+    document.body.classList.add("resize-animation-stopper");
+
     move_selector_dark();
     document.documentElement.setAttribute("color-theme", "dark");
     localStorage.setItem("color-theme", "dark");
@@ -44,6 +48,11 @@ function switch_dark() {
     if (themeMeta) {
         themeMeta.setAttribute("content", "#121418");
     };
+
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout( () => {
+        document.body.classList.remove("resize-animation-stopper");
+    }, 400);
 };
 
 function move_selector_dark() {
