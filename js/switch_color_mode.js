@@ -21,7 +21,9 @@ function switch_light() {
 
     // set the UI of the browser and the device (in some cases) to the right color
     const themeMeta = document.querySelector('meta[name="theme-color"]');
-    themeMeta.setAttribute("content", "#E5E5E7");
+    if (themeMeta) {
+        themeMeta.setAttribute("content", "#E5E5E7");
+    };
 };
 
 function move_selector_light() {
@@ -39,7 +41,9 @@ function switch_dark() {
     
     // set the UI of the browser and the device (in some cases) to the right color
     const themeMeta = document.querySelector('meta[name="theme-color"]');
-    themeMeta.setAttribute("content", "#121418");
+    if (themeMeta) {
+        themeMeta.setAttribute("content", "#121418");
+    };
 };
 
 function move_selector_dark() {
