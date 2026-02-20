@@ -11,7 +11,9 @@ window.onload = function() {
 };
 
 function switch_light() {
-    mainOrganizingElement.classList.add("resize-animation-stopper");
+    if (mainOrganizingElement) { 
+        mainOrganizingElement.classList.add("resize-animation-stopper");
+    };
 
     move_selector_light();
     document.documentElement.setAttribute("color-theme", "light");
@@ -23,10 +25,12 @@ function switch_light() {
         themeMeta.setAttribute("content", "#E5E5E7");
     };
 
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout( () => {
-        mainOrganizingElement.classList.remove("resize-animation-stopper");
-    }, 400);
+    if (mainOrganizingElement) {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout( () => {
+            mainOrganizingElement.classList.remove("resize-animation-stopper");
+        }, 400);
+    };
 };
 
 function move_selector_light() {
@@ -38,7 +42,9 @@ function move_selector_light() {
 
 
 function switch_dark() {
-    mainOrganizingElement.classList.add("resize-animation-stopper");
+    if (mainOrganizingElement) {
+        mainOrganizingElement.classList.add("resize-animation-stopper");
+    };
 
     move_selector_dark();
     document.documentElement.setAttribute("color-theme", "dark");
@@ -50,10 +56,12 @@ function switch_dark() {
         themeMeta.setAttribute("content", "#121418");
     };
 
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout( () => {
-        mainOrganizingElement.classList.remove("resize-animation-stopper");
-    }, 400);
+    if (mainOrganizingElement) {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout( () => {
+            mainOrganizingElement.classList.remove("resize-animation-stopper");
+        }, 400);
+    };
 };
 
 function move_selector_dark() {
