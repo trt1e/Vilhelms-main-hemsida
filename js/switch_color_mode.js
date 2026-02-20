@@ -11,7 +11,7 @@ window.onload = function() {
 };
 
 function switch_light() {
-    mainOrganizingElement.add("resize-animation-stopper");
+    mainOrganizingElement.classList.add("resize-animation-stopper");
 
     move_selector_light();
     document.documentElement.setAttribute("color-theme", "light");
@@ -25,7 +25,7 @@ function switch_light() {
 
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout( () => {
-        mainOrganizingElement.remove("resize-animation-stopper");
+        mainOrganizingElement.classList.remove("resize-animation-stopper");
     }, 400);
 };
 
@@ -38,7 +38,7 @@ function move_selector_light() {
 
 
 function switch_dark() {
-    mainOrganizingElement.add("resize-animation-stopper");
+    mainOrganizingElement.classList.add("resize-animation-stopper");
 
     move_selector_dark();
     document.documentElement.setAttribute("color-theme", "dark");
@@ -52,7 +52,7 @@ function switch_dark() {
 
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout( () => {
-        mainOrganizingElement.remove("resize-animation-stopper");
+        mainOrganizingElement.classList.remove("resize-animation-stopper");
     }, 400);
 };
 
