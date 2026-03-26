@@ -63,11 +63,13 @@
         <div class="main glass_foreground glass_4rem_padding">
             <h1>Östra Löken upplagor</h1>
             <div id="pdf_nav_UI">
-                <button class="pdf_nav_buttons" aria-label="Tidigare upplaga" onclick="previousPDF()">tidigare</button>
-                <button class="pdf_nav_buttons" aria-label="Nästa upplaga" onclick="nextPDF()">nästa</button>
+                <button class="pdf_nav_buttons" aria-label="Tidigare upplaga">tidigare</button>
+                <button class="pdf_nav_buttons" aria-label="Tidigare upplaga">byt till bildrendering</button>
+                <button class="pdf_nav_buttons" aria-label="Nästa upplaga">nästa</button>
             </div>
             <p id="pdf_upplaga_number">Upplaga 1</p>
             <iframe id="main_pdf" title="Östra Löken upplagor" src="./pdfs/Östra_Löken_upplaga_1.pdf"></iframe>
+            <div id="pdf_container"></div>
         </div>
     </main>
     <div id="body_filler"></div>
@@ -88,7 +90,7 @@
     <script src="../js/scroll_header.js"></script>
     <script src="../js/move_bg_blobs.js"></script>
     <script src="../js/switch_color_mode.js"></script>
-    <script src="./js/handle_pdf.js"></script>
+    <script type="module" defer src="./js/PDFjs_reader.js"></script>
     <script src="../js/dont_animate_when_rezising.js"></script>
 </body>
 </html>
