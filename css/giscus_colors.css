@@ -16,7 +16,7 @@ main {
 }
 
 /* Om din hemsida styr temat via [color-theme="dark"] på <html> taggen */
-main[data-theme='dark'] {
+main[color-theme='dark'] {
     --color-canvas-default: rgb(18, 20, 24);
     --color-canvas-subtle: rgb(31, 31, 51);
     --color-border-default: rgb(45, 45, 67);
