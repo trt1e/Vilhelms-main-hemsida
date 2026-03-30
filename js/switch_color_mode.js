@@ -80,17 +80,27 @@ function update_giscus() {
     const iframe = document.querySelector('.giscus-frame');
     if (iframe) {
         const current_mode = document.documentElement.getAttribute("data-theme");
+        let css_url = "https://vgsites.se/css/giscus_colors.css";
         if (current_mode == "dark") {
-            const css_url = "https://vgsites.se/css/giscus_colors.css";
-        } else {
-            const css_url = "https://vgsites.se/css/giscus_colors.css";
+            css_url = "https://vgsites.se/css/giscus_colors_dark.css";
         };
         iframe.contentWindow.postMessage( 
             { giscus: { setConfig: { theme: css_url } } }, 
-            'https://giscus.app' 
+            "https://giscus.app"
         );
         console.log("Giscus theme change: " + css_url);
     } else {
         return;
     };
+
+    window.addEventListener("message", (event) => {
+        if (event.origin == "https://giscus.app") {
+            const giscus_data = event.data.giscus;
+            if (typeof event.data == "object" && giscus_data) {   
+                if (giscus_data.resizeHeight) {
+                    set_bg_to_fg_size();
+                };
+            };
+        };
+    });
 };
