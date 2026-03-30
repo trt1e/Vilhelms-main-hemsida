@@ -47,3 +47,10 @@ body {
 .pdf_page {
     width: 100%;
 }
+
+/*Text styling*/
+.main_content_footnote {
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    text-align: center;
+}

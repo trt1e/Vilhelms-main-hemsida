@@ -28,8 +28,6 @@
     border-radius: 2rem;
 }
 
-/*Text styling*/
-.main_content_footnote {
-    font-size: 1rem;
-    margin-top: 0.3rem;
+p a {
+    text-decoration: underline;
 }
