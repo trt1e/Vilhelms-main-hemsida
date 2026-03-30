@@ -1,0 +1,12 @@
+/*Main*/
+h1 {
+    overflow-wrap: anywhere;
+}
+
+.main_content_container {
+    margin-bottom: 1.5rem;
+    overflow-wrap: anywhere;
+}
+.main_content_container:last-child {
+    margin-bottom: 0.5rem;
+}

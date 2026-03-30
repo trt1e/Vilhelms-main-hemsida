@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Det här är Vilhelm Grills hemsida, här är V-chat!">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Vilhelms hemsida"> 
+    <meta property="og:image" content="https://vgsites.se/images/images/Vilhelm_Grill_image_1.jpg"> 
+    <meta property="og:description" content="Det här är Vilhelm Grills hemsida, här är V-chat!">
+    <meta property="og:url" content="https://vgsites.se/vchat">
+    <meta property="og:type" content="website">
+    <title>Vilhelms om mig</title>
+
+    <link rel="canonical" href="https://vgsites.se/vchat">
+    <link rel="icon" type="image/x-icon" href="../images/icons/vgsites-icon.ico">
+    <link rel="stylesheet" href="../css/universal_styling.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="../js/check_dark_mode.js"></script> <!--This needs to be loaded first to ensure a good user experiance-->
+</head>
+<body>
+    <div id="load_cover">
+        <h1>vgsites.se laddar…</h1>
+        <p>Om det här tar en längre tid så är någonting fel</p>
+    </div>
+
+    <header>
+        <div class="header glass_background"></div>
+        <div class="header scrollabel_header glass_foreground glass_0.5rem_padding">
+            <div id="header_maix_chunk">
+                <div class="header_div">
+                    <a href="../" title='Gå till "hem"'>hem</a>
+                </div>
+                <div class="header_div">
+                    <a href="../webbsidor/" title='Gå till "webbsidor"'>webbsidor</a>
+                </div>
+                <div class="header_div">
+                    <a href="../östralöken/" title='Gå till "östra löken"'>östra löken</a>
+                </div>
+                <div class="header_div">
+                    <a href="./" title='Gå till "om mig"'>om mig</a>
+                </div>
+            </div>
+            <div id="header_vertical_border"></div>
+            <div id="header_UI_switch_container" title="Switch color mode">
+                <div class="header_UI_switch glass_background"></div>
+                <div class="header_UI_switch glass_foreground">
+                    <button onclick="switch_light()" aria-label="Gå till ljust läge" class="header_UI_switch_button" id="header_UI_switch_button_style"></button>
+                    <button onclick="switch_dark()" aria-label="Gå till mörkt läge" class="header_UI_switch_button" id="header_UI_switch_button_read"></button>
+                </div>
+            </div>
+            <div id="header_UI_switch_selector" title="Switch color mode"></div>
+        </div>
+    </header>
+    <div class="background_colorblob background_colorblob_primary_color"></div>
+    <div class="background_colorblob background_colorblob_primary_color"></div>
+    <div class="background_colorblob background_colorblob_secondary_color"></div>
+    <div class="background_colorblob background_colorblob_secondary_color"></div>
+    <div class="background_colorblob background_colorblob_extra_color"></div>
+    <div class="background_colorblob background_colorblob_extra_color"></div>
+    <main>
+        <div class="main glass_background"></div>
+        <div class="main glass_foreground glass_4rem_padding">
+            <h1>Välkomen till V-chat!</h1>
+            <div class="main_content_container">
+                <h2>Kort om mig</h2>
+                <p>Jag är en teknikintresserad, mångkunnig och samhällsvetande gymnasieelev på 17 vårar. Jag offrade lågstadiet till PS3 och Minecraft, mellanstadiet uppslukades av Overwatch, högstadiet försvann till Scrap Mechanic, Valorant och Hitman. Började programmera Python i 7:an och nu i gymnasiet har jag fortsatt med det och gått över mer till full-stack-utveckling. Tyvärr har jag generellt sett inte lika mycket tid som tidigare att dedikera till spel, men jag spelar ändå då och då. Istället tillbringar jag min tid mer åt pluggande och egna projekt. Det inkluderar projekt som Östra Kulten, broschyren “Om krisen, kriget eller Ulf Kristersson kommer” och Östra Radion. Men den största av dem är troligtvis den omtalade skolsatirtidningen: Östra Löken, som jag grundade tillsammans med Joar VT25.</p>
+            </div>
+            <div class="main_content_container">
+                <h2>Mina mål</h2>
+                <p>Jag kommer ständigt på nya idéer på projekt och några av dem blir färdiga till någon nivå. Men mitt mål är inte att alla projekt ska bli klara, utan att genom att jag kastar så många ägg mot väggen att den snart spricker; göra mitt rykte legendariskt i skolans korridorer.</p>
+            </div>
+            <div class="main_content_container">
+                <h2>Erfarenheter</h2>
+                <p>Som en flitig, smått perfektionistisk och idéfylld person så har jag mycket erfarenhet av riktigt arbete. Det inkluderar hur man håller sig till ett schema, hur man jobbar i grupp på ett stort projekt och att skriva professionellt. Jag har också mer grundläggande praktiska erfarenheter som att sköta en kassa, servera gäster och att arbeta i en kontorsmiljö. Jag är också väldigt erfaren i både svenska och engelska med mycket tid utomlands och i olika delar av Sverige. Allt det utan att behöva förlita mig på AI-fuskverktyg.</p>
+            </div>
+        </div>
+    </main>
+    <div id="body_filler"></div>
+    <footer>
+        <p class="footer_content footer_text">Denna sida är gjord av Vilhelm</p>
+        <div class="footer_content">
+            <p class="footer_text">Kontakta mig på ‎</p>
+            <a href="mailto:vilhelm.grill@gmail.com" title="Skicka en e-post till Vilhelm" class="footer_text">vilhelm.grill@gmail.com</a>
+        </div>
+        <div class="footer_content">
+            <p class="footer_text">Hitta denna sida på ‎</p>
+            <a href="https://github.com/trt1e/Vilhelms-main-hemsida" target="_blank" title="Gå till denna hemsidas Github sida" class="footer_text">Github</a>
+        </div>
+    </footer>
+    
+    <script src="../js/convert_to_rem.js"></script>
+    <script src="../js/fix_body_height.js"></script>
+    <script src="../js/scroll_header.js"></script>
+    <script src="../js/move_bg_blobs.js"></script>
+    <script src="../js/switch_color_mode.js"></script>
+    <script src="../js/dont_animate_when_rezising.js"></script>
+</body>
+</html>
