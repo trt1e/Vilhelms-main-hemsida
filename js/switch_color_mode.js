@@ -2,7 +2,7 @@ const baseLightSpot = convertRemToPixels(0.5) + convertRemToPixels(9 + 9 + 9 + 9
 const mainOrganizingElement = document.getElementById("main_organizing_large_container")
 
 window.onload = function() {
-    currentTheme = localStorage.getItem("color-theme");
+    currentTheme = localStorage.getItem("data-theme");
     if (currentTheme === "dark") {
         move_selector_dark();
     } else {
@@ -16,8 +16,8 @@ function switch_light() {
     };
 
     move_selector_light();
-    document.documentElement.setAttribute("color-theme", "light");
-    localStorage.setItem("color-theme", "light");
+    document.documentElement.setAttribute("data-theme", "light");
+    localStorage.setItem("data-theme", "light");
 
     // set the UI of the browser and the device (in some cases) to the right color
     const themeMeta = document.querySelector('meta[name="theme-color"]');
@@ -47,8 +47,8 @@ function switch_dark() {
     };
 
     move_selector_dark();
-    document.documentElement.setAttribute("color-theme", "dark");
-    localStorage.setItem("color-theme", "dark");
+    document.documentElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("data-theme", "dark");
     
     // set the UI of the browser and the device (in some cases) to the right color
     const themeMeta = document.querySelector('meta[name="theme-color"]');

@@ -17,7 +17,7 @@
     --blob-opacity: 100%;
 }
 
-:root[color-theme="light"] {
+:root[data-theme="light"] {
     /*light variants*/
     background-color: #E5E5E7;
 
@@ -34,7 +34,7 @@
     --blob-opacity: 100%;
 }
 
-:root[color-theme="dark"] {
+:root[data-theme="dark"] {
     /*Dark variants*/
     background-color: rgb(18, 20, 24); 
 
