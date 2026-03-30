@@ -80,7 +80,11 @@ function update_giscus() {
     const iframe = document.querySelector('.giscus-frame');
     if (iframe) {
         const current_mode = document.documentElement.getAttribute("data-theme");
-        const css_url = "https://vgsites.se/css/giscus_colors.css";
+        if (current_mode == "dark") {
+            const css_url = "https://vgsites.se/css/giscus_colors.css";
+        } else {
+            const css_url = "https://vgsites.se/css/giscus_colors.css";
+        };
         iframe.contentWindow.postMessage( 
             { giscus: { setConfig: { theme: css_url } } }, 
             'https://giscus.app' 
