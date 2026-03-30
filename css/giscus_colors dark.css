@@ -1,0 +1,12 @@
+/* Giscus Custom Theme Stylesheet dark mode*/
+main {
+    --color-canvas-default: rgb(18, 20, 24);
+    --color-canvas-subtle: rgb(31, 31, 51);
+    --color-border-default: rgb(45, 45, 67);
+    --color-fg-default: rgb(104, 122, 172);
+    --color-accent-fg: rgb(177, 112, 206);
+    --color-btn-primary-bg: rgb(47, 65, 113);
+    
+    /* Typsnitt */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

@@ -8,6 +8,7 @@ window.onload = function() {
     } else {
         move_selector_light();
     };
+    update_giscus();
 };
 
 function switch_light() {
@@ -24,6 +25,8 @@ function switch_light() {
     if (themeMeta) {
         themeMeta.setAttribute("content", "#E5E5E7");
     };
+
+    update_giscus();
 
     if (mainOrganizingElement) {
         clearTimeout(resizeTimer);
@@ -56,6 +59,8 @@ function switch_dark() {
         themeMeta.setAttribute("content", "#121418");
     };
 
+    update_giscus();
+
     if (mainOrganizingElement) {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout( () => {
@@ -69,4 +74,19 @@ function move_selector_dark() {
 
     sliderUiObject.style.left = baseLightSpot + convertRemToPixels(3) + "px";
     sliderUiObject.style.top = convertRemToPixels(0.5) + "px";
+};
+
+function update_giscus() {
+    const iframe = document.querySelector('.giscus-frame');
+    if (iframe) {
+        const current_mode = document.documentElement.getAttribute("data-theme");
+        const css_url = "https://vgsites.se/css/giscus_colors.css";
+        iframe.contentWindow.postMessage( 
+            { giscus: { setConfig: { theme: css_url } } }, 
+            'https://giscus.app' 
+        );
+        console.log("Giscus theme change: " + css_url);
+    } else {
+        return;
+    };
 };
