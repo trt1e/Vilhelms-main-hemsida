@@ -17,23 +17,6 @@
     --blob-opacity: 100%;
 }
 
-:root[data-theme="light"] {
-    /*light variants*/
-    background-color: #E5E5E7;
-
-    --bg-color: rgb(218, 218, 238); /*Background of main*/
-    --real-bg: radial-gradient(ellipse at top, rgb(228, 226, 214), transparent), radial-gradient(ellipse at bottom, rgb(183, 183, 194), transparent); /*Background of screen*/
-    --underline-color: rgb(203, 203, 224);
-    --select-color: rgb(188, 188, 209);
-    --highlight-color: rgb(162, 162, 184);
-    --text-color: rgb(84, 102, 152);
-    --primary-color: rgb(133, 152, 207); 
-    --secondary-color: rgb(170, 165, 146);
-    --extra-color: rgb(177, 112, 206);
-
-    --blob-opacity: 100%;
-}
-
 :root[data-theme="dark"] {
     /*Dark variants*/
     background-color: rgb(18, 20, 24); 
@@ -109,9 +92,7 @@ body {
 .background_colorblob_extra_color {
     background-color: var(--extra-color);
 }
-main {
-
-}
+/* Main */
 .main {
     width: 40rem;
     height: fit-content;
@@ -136,9 +117,6 @@ main {
 }
 
 /*Header and footer*/
-header {
-
-}
 .header {
     width: 43rem;
     max-width: 100%;
