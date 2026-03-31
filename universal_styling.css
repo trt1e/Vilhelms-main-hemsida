@@ -273,6 +273,16 @@ a.footer_text {
     text-decoration: underline;
 }
 
+/*Vchat prompt*/
+#vchat_prompt {
+    font-size: 1rem;
+    opacity: 70%;
+    text-decoration: underline;
+}
+#vchat_prompt:hover {
+    opacity: 100%;
+}
+
 /*Style the currant tab in header*/
 .currant_tab {
     text-transform: capitalize;
