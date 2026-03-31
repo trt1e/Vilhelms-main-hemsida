@@ -92,7 +92,7 @@ body {
 .background_colorblob_extra_color {
     background-color: var(--extra-color);
 }
-/* Main */
+/*Main*/
 .main {
     width: 40rem;
     height: fit-content;
@@ -111,9 +111,31 @@ body {
         margin-top: 5rem;
     }
 }
+/*Body filler*/
 #body_filler {
     width: 0;
     min-height: 30rem;
+}
+/*Main bottom*/
+#main_footer {
+    width: 100%;
+    margin-top: 0.6rem;
+    display: flex;
+    justify-content: center;
+}
+#main_footer span {
+    margin: 0 0.5rem;
+}
+#main_footer a {
+    display: block;
+    opacity: 70%;
+    font-size: 1rem;
+    text-decoration: underline;
+    text-align: center;
+    transition: 0.1s;
+}
+#main_footer a:hover {
+    opacity: 100%;
 }
 
 /*Header and footer*/
@@ -125,13 +147,12 @@ body {
     left: calc(50% - 20rem - 3rem);
     padding: 0.5rem;
     margin: 1rem;
-    
     border-radius: 2rem;
+
     display: grid;
     grid-template-columns: calc(9rem + 9rem + 9rem + 9rem - 0.2rem) calc(2px + 0.8rem) 6rem;
     grid-template-rows: 1fr;
     cursor: default;
-
     z-index: 2;
 }
 @media (width <= 43rem) {
@@ -248,6 +269,7 @@ footer {
     display: flex;
     justify-content: center;
     white-space: nowrap;
+    bottom: 1rem;
 }
 @media (width <= 50rem) {
     footer {
@@ -271,21 +293,6 @@ footer {
 }
 a.footer_text {
     text-decoration: underline;
-}
-
-/*Vchat prompt*/
-#vchat_prompt {
-    width: 100%;
-    display: block;
-    font-size: 1rem;
-    opacity: 70%;
-    text-decoration: underline;
-    text-align: center;
-    margin-top: 0.6rem;
-    transition: 0.1s;
-}
-#vchat_prompt:hover {
-    opacity: 100%;
 }
 
 /*Style the currant tab in header*/

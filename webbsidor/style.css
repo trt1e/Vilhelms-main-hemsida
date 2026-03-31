@@ -71,7 +71,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: inherit;
-    filter: grayscale(70%);
+    filter: grayscale(40%);
     transition: all 0.4s ease; 
 }
 

@@ -50,9 +50,17 @@
                 </div>
             </div>
             <div id="header_UI_switch_selector" title="Switch color mode"></div>
+            <!--
+            <div id="hide_ui_button_container">
+                <div class="glass_background hide_ui_button"></div>
+                <button class="glass_foreground hide_ui_button">
+                    <img id="hide_ui_button_img" src="./images/UI/clear_arrow_light_mode.svg">
+                </button>
+            </div> 
+            -->
         </div>
     </header>
-    <div>
+    <div> <!--Background blobs-->
         <div class="background_colorblob background_colorblob_primary_color"></div>
         <div class="background_colorblob background_colorblob_primary_color"></div>
         <div class="background_colorblob background_colorblob_secondary_color"></div>
@@ -85,10 +93,14 @@
                 <p>Nu kan man chatta med alla sina vänner på V-chat!!!</p>
                 <p class="main_content_footnote">Nyheter uppdaterade: 30/03/2026</p> <!--vgsites.se lanserades: 28/12/2025-->
             </div>
-            <a href="./vchat/" id="vchat_prompt">Diskutera denna hemsida på V-chat!</a>
+            <div id="main_footer">
+                <a href="./vchat/">V-chat</a>
+                <span>•</span>
+                <a href="./screensaver/">Screensaver</a>
+            </div>
         </div>
     </main>
-    <div id="body_filler"></div>
+    <div id="body_filler"></div> 
     <footer>
         <p class="footer_content footer_text">Denna sida är gjord av Vilhelm Grill</p>
         <div class="footer_content">
@@ -106,6 +118,7 @@
     <script src="./js/scroll_header.js"></script>
     <script src="./js/move_bg_blobs.js"></script>
     <script src="./js/switch_color_mode.js"></script>
+    <script src="./js/hide_ui.js"></script>
     <script src="./js/dont_animate_when_rezising.js"></script>
 </body>
 </html>
