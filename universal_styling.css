@@ -275,6 +275,7 @@ a.footer_text {
 
 /*Vchat prompt*/
 #vchat_prompt {
+    width: 100%;
     font-size: 1rem;
     opacity: 70%;
     text-decoration: underline;
