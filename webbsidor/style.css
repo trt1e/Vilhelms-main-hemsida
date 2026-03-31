@@ -60,7 +60,6 @@
     transform: rotateX(3deg) translateY(-3px);
 }
 .main_content_card.foregroundcard_hover_active {
-    color: transparent;
     border-radius: 0.8rem;
     backdrop-filter: blur(0px);
     transform: rotateX(3deg) translateY(-3px);
@@ -72,18 +71,32 @@
     height: 100%;
     object-fit: cover;
     border-radius: inherit;
+    filter: grayscale(70%);
     transition: all 0.4s ease; 
 }
 
 /*Img on hover*/
 .main_content_card_img_hover_active {
     transform: scale(1.15);
+    filter: grayscale(0%);
 }
 
 /*Cards text*/
 .main_card_text {
+    width: fit-content;
+    max-width: 80%;
     text-align: center;
-    margin-top: 0.7rem;
-    width: 80%;
+    font-size: 1.3rem;
+    padding: 0.3rem;
+    margin-top: 0.4rem;
+    background-color: var(--underline-color);
+    border-radius: 0.5rem;
     transition: all 0.4s ease; 
+}
+
+/*Cards text on hover*/
+.main_card_text_hover {
+    background-color: transparent;
+    color: transparent;
+    transform: scale(60%) translateY(-1rem);
 }
