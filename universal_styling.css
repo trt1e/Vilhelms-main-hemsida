@@ -280,6 +280,7 @@ a.footer_text {
     text-decoration: underline;
     text-align: center;
     padding: 0.4rem;
+    transition: 0.1s;
 }
 #vchat_prompt:hover {
     opacity: 100%;
