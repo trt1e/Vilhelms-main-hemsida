@@ -1,0 +1,66 @@
+{
+  "name": "vgsites.se",
+  "short_name": "vgsites.se",
+  "start_url": "/index.html",
+  "icons": [
+    {
+      "src": "/images/icons/vgsites-icon.ico",
+      "sizes": "36x36",
+      "type": "image/ico"
+    },
+    {
+      "src": "/images/icons/vgsites-icon.ico",
+      "sizes": "48x48",
+      "type": "image/ico"
+    },
+    {
+      "src": "/images/icons/vgsites-icon.ico",
+      "sizes": "60x60",
+      "type": "image/ico"
+    },
+    {
+      "src": "/images/icons/vgsites-icon.ico",
+      "sizes": "72x72",
+      "type": "image/ico"
+    },
+    {
+      "src": "/images/icons/vgsites-icon.ico",
+      "sizes": "76x76",
+      "type": "image/ico"
+    },
+    {
+      "src": "/images/icons/vgsites-icon.ico",
+      "sizes": "96x96",
+      "type": "image/ico"
+    },
+    {
+      "src": "/images/icons/vgsites-icon.ico",
+      "sizes": "120x120",
+      "type": "image/ico"
+    },
+    {
+      "src": "/images/icons/vgsites-icon.ico",
+      "sizes": "152x152",
+      "type": "image/ico"
+    },
+    {
+      "src": "/images/icons/vgsites-icon.ico",
+      "sizes": "180x180",
+      "type": "image/ico"
+    },
+    {
+      "src": "/images/icons/vgsites-icon.ico",
+      "sizes": "192x192",
+      "type": "image/ico"
+    },
+    {
+      "src": "/images/icons/vgsites-icon.ico",
+      "sizes": "512x512",
+      "type": "image/ico"
+    }
+  ],
+  "theme_color": "#000000",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "orientation": "portrait"
+}
