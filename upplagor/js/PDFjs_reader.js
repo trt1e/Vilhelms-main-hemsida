@@ -111,16 +111,18 @@ bildformButton.addEventListener("click", async () => {
     };
     if (renderMode == "browser") {
         renderMode = "JSrender";
-        bildformButton.innerText = "byt till browserrendering"
-        document.getElementById("main_pdf").style.display = "none"
+        bildformButton.innerText = "byt till browserrendering";
+        document.getElementById("main_pdf").style.display = "none";
+        document.getElementById("pdf_loading_text").style.display = "block";
         set_bg_to_fg_size();
         placeBlobRandomInViewport();
         await renderDocument(getLokenEdition(counter));
+        document.getElementById("pdf_loading_text").style.display = "none";
     } else {
         renderMode = "browser";
-        bildformButton.innerText = "byt till bildrendering"
+        bildformButton.innerText = "byt till bildrendering";
         pdfContent.src = `./pdfs/Östra_Löken_upplaga_${counter}.pdf`;
-        document.getElementById("main_pdf").style.display = "block"
+        document.getElementById("main_pdf").style.display = "block";
         set_bg_to_fg_size();
         placeBlobRandomInViewport();
         await unrenderDocument();

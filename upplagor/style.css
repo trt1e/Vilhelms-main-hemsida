@@ -49,6 +49,12 @@ body {
 }
 
 /*Text styling*/
+#pdf_loading_text {
+    width: 100%;
+    text-align: center;
+    margin: 5rem 0;
+    display: none;
+}
 .main_content_footnote {
     font-size: 1rem;
     margin-top: 0.3rem;
