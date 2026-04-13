@@ -89,9 +89,11 @@ document.getElementsByClassName("pdf_nav_buttons")[0].addEventListener("click", 
             elementBlob.style.transition = "0s";
         };
         unrenderDocument();
+        document.getElementById("pdf_loading_text").style.display = "block";
         set_bg_to_fg_size();
         placeBlobRandomInViewport();
         await renderDocument(getLokenEdition(counter));
+        document.getElementById("pdf_loading_text").style.display = "none";
         set_bg_to_fg_size();
         placeBlobRandomInViewport();
         for (let element = 0; element < backgroundColorBlob.length; element++) {
@@ -151,10 +153,12 @@ document.getElementsByClassName("pdf_nav_buttons")[2].addEventListener("click", 
             let elementBlob = backgroundColorBlob[element];
             elementBlob.style.transition = "4.6s";
         };
-        await unrenderDocument();
+        unrenderDocument();
+        document.getElementById("pdf_loading_text").style.display = "block";
         set_bg_to_fg_size();
         placeBlobRandomInViewport();
         await renderDocument(getLokenEdition(counter));
+        document.getElementById("pdf_loading_text").style.display = "none";
         set_bg_to_fg_size();
         placeBlobRandomInViewport();
         for (let element = 0; element < backgroundColorBlob.length; element++) {
